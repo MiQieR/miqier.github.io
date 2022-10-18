@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mitchellsbox.ml/Tutorials/NintendoNetworkSolution/</loc>
+    
+    <lastmod>2022-10-18</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mitchellsbox.ml/Purchase%20Advice/Pocket%20WiFi%20with%20Snapdragon%20410/</loc>
     
     <lastmod>2022-08-08</lastmod>
@@ -16,14 +23,14 @@
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/Recommendations/Email%20Review/</loc>
+    <loc>https://mitchellsbox.ml/Recommendations/Tampermonkey%20Script%20Recommend/</loc>
     
     <lastmod>2022-08-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/Recommendations/Tampermonkey%20Script%20Recommend/</loc>
+    <loc>https://mitchellsbox.ml/Recommendations/Email%20Review/</loc>
     
     <lastmod>2022-08-07</lastmod>
     
@@ -174,14 +181,14 @@
 
   
   <url>
-    <loc>https://mitchellsbox.ml/categories/Blog/</loc>
+    <loc>https://mitchellsbox.ml/categories/%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2022-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/categories/%E7%9F%A5%E8%AF%86/</loc>
+    <loc>https://mitchellsbox.ml/categories/Blog/</loc>
     <lastmod>2022-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -202,14 +209,14 @@
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://mitchellsbox.ml/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</loc>
     <lastmod>2022-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</loc>
+    <loc>https://mitchellsbox.ml/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2022-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
