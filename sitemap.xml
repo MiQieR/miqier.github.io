@@ -202,13 +202,6 @@
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2023-01-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://mitchellsbox.ml/categories/%E9%80%89%E8%B4%AD%E5%BB%BA%E8%AE%AE/</loc>
     <lastmod>2023-01-07</lastmod>
     <changefreq>daily</changefreq>
@@ -217,6 +210,13 @@
   
   <url>
     <loc>https://mitchellsbox.ml/categories/%E6%8D%A1%E5%9E%83%E5%9C%BE/</loc>
+    <lastmod>2023-01-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mitchellsbox.ml/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
