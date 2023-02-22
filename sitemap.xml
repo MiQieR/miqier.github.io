@@ -2,14 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://mitchellsbox.ml/Tutorials/Aria2_Cloud_Drive_Downloader/</loc>
+    <loc>https://mitchellsbox.ml/Purchase_Advice/Chainedbox_OMV/</loc>
     
-    <lastmod>2023-02-21</lastmod>
+    <lastmod>2023-02-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/Purchase%20Advice/Chainedbox_OMV/</loc>
+    <loc>https://mitchellsbox.ml/Purchase_Advice/Chainedbox_OpenWrt/</loc>
+    
+    <lastmod>2023-02-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mitchellsbox.ml/Tutorials/Aria2_Cloud_Drive_Downloader/</loc>
     
     <lastmod>2023-02-21</lastmod>
     
@@ -30,14 +37,14 @@
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/Purchase%20Advice/Pocket_WiFi_with_Snapdragon_410/</loc>
+    <loc>https://mitchellsbox.ml/Purchase_Advice/Pocket_WiFi_with_Snapdragon_410/</loc>
     
     <lastmod>2022-08-08</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/Purchase%20Advice/2.5Gb_Family_LAN/</loc>
+    <loc>https://mitchellsbox.ml/Purchase_Advice/2.5Gb_Family_LAN/</loc>
     
     <lastmod>2022-08-08</lastmod>
     
@@ -58,21 +65,21 @@
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/Purchase%20Advice/SSD/</loc>
+    <loc>https://mitchellsbox.ml/Purchase_Advice/SSD/</loc>
     
     <lastmod>2022-07-16</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/Purchase%20Advice/x86_Snail_Interstellar_NAS/</loc>
+    <loc>https://mitchellsbox.ml/Purchase_Advice/x86_Snail_Interstellar_NAS/</loc>
     
     <lastmod>2022-07-16</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/Purchase%20Advice/ASUS_Router_Light_NAS/</loc>
+    <loc>https://mitchellsbox.ml/Purchase_Advice/ASUS_Router_Light_NAS/</loc>
     
     <lastmod>2022-07-16</lastmod>
     
@@ -86,7 +93,7 @@
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/Purchase%20Advice/Meta_Quest2/</loc>
+    <loc>https://mitchellsbox.ml/Purchase_Advice/Meta_Quest2/</loc>
     
     <lastmod>2022-05-12</lastmod>
     
@@ -135,7 +142,7 @@
   </url>
   
   <url>
-    <loc>https://mitchellsbox.ml/Purchase%20Advice/External_Hard_Drive_Case/</loc>
+    <loc>https://mitchellsbox.ml/Purchase_Advice/External_Hard_Drive_Case/</loc>
     
     <lastmod>2022-01-28</lastmod>
     
@@ -172,7 +179,7 @@
 
   <url>
     <loc>https://mitchellsbox.ml/</loc>
-    <lastmod>2023-02-21</lastmod>
+    <lastmod>2023-02-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -182,35 +189,35 @@
   
   <url>
     <loc>https://mitchellsbox.ml/categories/%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2023-02-21</lastmod>
+    <lastmod>2023-02-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://mitchellsbox.ml/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</loc>
-    <lastmod>2023-02-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://mitchellsbox.ml/categories/%E9%80%89%E8%B4%AD%E5%BB%BA%E8%AE%AE/</loc>
-    <lastmod>2023-02-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://mitchellsbox.ml/categories/%E6%8D%A1%E5%9E%83%E5%9C%BE/</loc>
-    <lastmod>2023-02-21</lastmod>
+    <lastmod>2023-02-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://mitchellsbox.ml/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2023-02-21</lastmod>
+    <lastmod>2023-02-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mitchellsbox.ml/categories/%E9%80%89%E8%B4%AD%E5%BB%BA%E8%AE%AE/</loc>
+    <lastmod>2023-02-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mitchellsbox.ml/categories/%E6%8D%A1%E5%9E%83%E5%9C%BE/</loc>
+    <lastmod>2023-02-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
