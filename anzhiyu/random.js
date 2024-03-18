@@ -1,3 +1,3 @@
-var posts=["ASUS-Router-Light-NAS/","Chainedbox-OMV/","DIY-x86-NAS/","Chainedbox-OpenWrt/","Dell-XPS9360-Hackintosh/","Free-Domain-&-CDN-for-Blog/","External-Hard-Drive-Case/","Markdown-Advance-Format/","Hexo-Blog/","NAS-Aria2-Downloader/","Solid-state-Drive(SSD)/","Pocket-WiFi-with-Snapdragon-410/","iOS-Sideloading-AltStore/","iperf3-Speed-Test/"];function toRandomPost(){
+var posts=["Chainedbox-OMV/","ASUS-Router-Light-NAS/","Chainedbox-OpenWrt/","DIY-x86-NAS/","Dell-XPS9360-Hackintosh/","External-Hard-Drive-Case/","Free-Domain-&-CDN-for-Blog/","Hexo-Blog/","Markdown-Advance-Format/","Solid-state-Drive(SSD)/","NAS-Aria2-Downloader/","Pocket-WiFi-with-Snapdragon-410/","iOS-Sideloading-AltStore/","iperf3-Speed-Test/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
