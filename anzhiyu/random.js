@@ -1,3 +1,3 @@
-var posts=["ASUS-Router-Light-NAS/","Anzhiyu-games-page/","Automatically-generate-video/","Chainedbox-OMV/","Chainedbox-OpenWrt/","DIY-x86-NAS/","Dell-XPS9360-Hackintosh/","External-Hard-Drive-Case/","GitHub-Pages-Blog/","Free-CDN-for-Blog/","Markdown-Advance-Format/","Hexo-Blog/","NAS-Aria2-Downloader/","Pocket-WiFi-with-Snapdragon-410/","Solid-state-Drive(SSD)/","iperf3-Speed-Test/","iOS-Sideloading-AltStore/"];function toRandomPost(){
+var posts=["ASUS-Router-Light-NAS/","Automatically-generate-video/","Anzhiyu-games-page/","Chainedbox-OpenWrt/","Chainedbox-OMV/","DIY-x86-NAS/","Dell-XPS9360-Hackintosh/","External-Hard-Drive-Case/","Free-CDN-for-Blog/","GitHub-Pages-Blog/","Hexo-Blog/","NAS-Aria2-Downloader/","Markdown-Advance-Format/","Pocket-WiFi-with-Snapdragon-410/","Solid-state-Drive(SSD)/","iOS-Sideloading-AltStore/","iOS-TrollStore/","iperf3-Speed-Test/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
