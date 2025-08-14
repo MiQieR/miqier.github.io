@@ -1,0 +1,3 @@
+var posts=["ASUS-Router-Light-NAS/","Anzhiyu-games-page/","Automatically-generate-video/","Chainedbox-OMV/","Chainedbox-OpenWrt/","Cloudflare-Free-CDN/","DIY-x86-NAS/","Dell-XPS9360-Hackintosh/","External-Hard-Drive-Case/","GitHub-Pages-Blog/","Git_GitHub_Code_Version_Control/","Hexo-Blog/","NAS-Aria2-Downloader/","Markdown-Advance-Format/","Pocket-WiFi-with-Snapdragon-410/","iOS-Sideloading-AltStore/","Solid-state-Drive(SSD)/","iOS-TrollStore/","iperf3-Speed-Test/","Linux-Fedora-NVIDIA-CUDA/"];function toRandomPost(){
+    pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
+  };

@@ -1,0 +1,22 @@
+<svg width="130" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="安知鱼-上班摸鱼中" role="img">
+ <title>安知鱼-上班摸鱼中</title>
+
+ <style>a:hover #llink{fill:url(#b);stroke:#ccc}a:hover #rlink{fill:#4183c4}</style>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="822" width="1449" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1" stroke="#d5d5d5">
+   <rect id="svg_2" rx="2" height="19" width="60" y="0.5" x="0.5" fill="#fcfcfc"/>
+   <rect id="svg_3" fill="#fafafa" rx="2" height="19" width="63" y="0.5" x="66.5"/>
+   <rect id="svg_4" stroke="#fafafa" height="5" width="0.5" y="7.5" x="66"/>
+   <path id="svg_5" fill="#fafafa" stroke="d5d5d5" d="m66.5,6.5l-3,3l0,1l3,3"/>
+  </g>
+  <image id="svg_6" xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjNDI4NUY0IiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R29vZ2xlIERyaXZlPC90aXRsZT48cGF0aCBkPSJNMTIuMDEgMS40ODVjLTIuMDgyIDAtMy43NTQuMDItMy43NDMuMDQ3LjAxLjAyIDEuNzA4IDMuMDAxIDMuNzc0IDYuNjJsMy43NiA2LjU3NGgzLjc2YzIuMDgxIDAgMy43NTMtLjAyIDMuNzQyLS4wNDctLjAwNS0uMDItMS43MDgtMy4wMDEtMy43NzUtNi42MmwtMy43Ni02LjU3NHptLTQuNzYgMS43M2E3ODkuODI4IDc4OS44NjEgMCAwIDAtMy42MyA2LjMxOUwwIDE1Ljg2OGwxLjg5IDMuMjk4IDEuODg1IDMuMjk3IDMuNjItNi4zMzUgMy42MTgtNi4zMy0xLjg4LTMuMjg3QzguMSA0LjcwNCA3LjI1NSAzLjIyIDcuMjUgMy4yMTR6bTIuMjU5IDEyLjY1My0uMjAzLjM0OGMtLjExNC4xOTgtLjk2IDEuNjcyLTEuODggMy4yODdhNDIzLjkzIDQyMy45NDggMCAwIDEtMS42OTggMi45N2MtLjAxLjAyNiAzLjI0LjA0MiA3LjIyMi4wNDJoNy4yNDRsMS43OTYtMy4xNTdjLjk5Mi0xLjczNCAxLjg1LTMuMjMgMS45MDYtMy4zMjNsLjEwNC0uMTY3aC03LjI0OXoiLz48L3N2Zz4=" height="14" width="14" y="3" x="5"/>
+  <text transform="matrix(1,0,0,0.9471606044137885,0,3.1605583463935294) " font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="10" id="svg_12" y="11.26432" x="23.479183" stroke-width="0" fill="#fcfcfc"/>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="10" id="svg_15" y="13.639318" x="20.604184" stroke-width="0" fill="#000000">Mitchell</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="10" id="svg_16" y="13.639318" x="73.604158" stroke-width="0" fill="#000000">努力学习中</text>
+ </g>
+</svg>

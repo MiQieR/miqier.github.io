@@ -1,0 +1,783 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>黑苹果：戴尔XPS9360笔记本 | MitchellsBox</title><meta name="keywords" content="折腾,捡垃圾,Hackintosh,破解"><meta name="author" content="Mitchell"><meta name="copyright" content="Mitchell"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="黑苹果：戴尔XPS9360笔记本"><meta name="application-name" content="黑苹果：戴尔XPS9360笔记本"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="黑苹果：戴尔XPS9360笔记本"><meta property="og:url" content="https://miqier.github.io/Dell-XPS9360-Hackintosh/index.html"><meta property="og:site_name" content="MitchellsBox"><meta property="og:description" content="Q&amp;amp;A为什么选择macOS？这个问题，可以转化为，macOS有什么Windows10做不到的功能？  苹果可以套牢用户的大杀器 —— iCloud。iCloud可以在你的iPhone、iPad之间同步几乎所有你跨设备操作时的数据：你的所有照片和视频、便签、通讯录、短信、提醒事项&amp;#x2F;日"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://i.loli.net/2021/09/24/gm1PSCnUrHtAb2u.jpg"><meta property="article:author" content="Mitchell"><meta property="article:tag" content="生活,blog,博客,学习,分享,Hexo,技术,Mitchell`s Box,MitchellsBox"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://i.loli.net/2021/09/24/gm1PSCnUrHtAb2u.jpg"><meta name="description" content="Q&amp;amp;A为什么选择macOS？这个问题，可以转化为，macOS有什么Windows10做不到的功能？  苹果可以套牢用户的大杀器 —— iCloud。iCloud可以在你的iPhone、iPad之间同步几乎所有你跨设备操作时的数据：你的所有照片和视频、便签、通讯录、短信、提醒事项&amp;#x2F;日"><link rel="shortcut icon" href="/./img/box.ico"><link rel="canonical" href="https://miqier.github.io/Dell-XPS9360-Hackintosh/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: undefined,
+  postHeadAiDescription: undefined,
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走鸭！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: 'https://996luoxuhe-anzhiyublogcomments.hf.space',
+  commentBarrageConfig:undefined,
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":["🤖️ 数码科技爱好者","🔍 分享与资源收集","🌱 科研领域小萌新","📰 沙雕新闻欢乐多","💻 智慧能源工程师","📷 摄影剪辑初学者","📺 B站有一点粉丝","🎬 电影美剧看不停","🚀 火箭技术热心粉","🎮 人菜枪马仍热爱","🌝 社恐话只熟人说"]},
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: Mitchell","link":"链接: ","source":"来源: MitchellsBox","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'MitchellsBox',
+  title: '黑苹果：戴尔XPS9360笔记本',
+  postAI: '',
+  pageFillDescription: 'QampA, 为什么选择macOS？, 为什么选择黑苹果而不是白苹果？, 硬件的选择, 戴尔Dell XPS13-9360 笔记本, BIOS设置, 无线网卡的选择, 我的一些网卡使用经验, EFI的寻找, OpenCore, 升级OpenCore, kexts, OC配置文件编辑器, 所有文本编辑器, OpenCore Configurator（简称OCC）, OC Auxiliary Tools（简称OCAT）, ProperTree, 安装macOS, 安装方法, 使用跑码模式寻找无法进入系统的问题, DVMT, 优化macOS, 升级macOS, 和Wi-Fi蓝牙有关功能的bug, 一些基本的设定, 三码洗白, CPU型号显示错误, CPU变频和频率显示, 系统macOS, 仍然存在的一些小bug, 自己的一点感想, 参考资料为什么选择这个问题可以转化为有什么做不到的功能苹果可以套牢用户的大杀器可以在你的之间同步几乎所有你跨设备操作时的数据你的所有照片和视频便签通讯录短信提醒事项日程云盘中的文件甚至所有你记不住的那些账号和密码钥匙串除此之外还能让你可以跨平台复制粘贴文字接听电话和让你的变身无线扩展屏随航功能将上的画面或音乐投送到我认为相比于华为那种将手机投屏到电脑实现上述功能的做法更加简洁可以使用一些苹果自有的专业软件一款视频剪辑软件可以使用很多仅限的插件一款强大的音乐制作软件相比用户付费率更高被盗版的可能性也更低因此对小开发者而言通常为开发的收入要高过为开发而开发是必须的只能运行在上对我自己来说等工具可以辅助我编程可以实时报错简单的代码错误可以一键自动修改对于有其他苹果设备的用户而言如等的兼容性更好为什么选择黑苹果而不是白苹果黑苹果指在非苹果生成并销售的设备上运行的白苹果苹果销售的电脑我可以非常肯定地说同价位黑苹果的性能远超白苹果同时扩展性更强参考以下例子内存硬盘为双核四线程主频最高睿频三级缓存显卡为参考跑分单核分多核分同价位我的内存硬盘为四核八线程主频单核睿频最高全核睿频最高三级缓存显卡为参考跑分单核分多核分硬件的选择戴尔笔记本显卡内存网卡声卡显示器扩展坞使用接口会发热严重使用则不会版本设置如果你更换了硬盘开启该选项可能导致卡死查看原因可选关闭节省功耗无线网卡的选择无线网卡的选购也可参考这篇文章黑苹果无线网卡购买指南很多英特尔网卡可以被驱动感谢网速可能能秒杀上面提到的博通网卡几乎完美兼容很多网卡焊死在主板上的笔记本可以不用网卡了一些英特尔网卡可以靠或驱动需要定制驱动推荐使用前者后者需要搭配使用网卡完整兼容列表下载和下载驱动蓝牙方法博通非苹果原装网卡比如更新至最新版本添加并禁用或删除英特尔网卡比如更新至最新版本添加并禁用或删除下载我的一些网卡使用经验从开始折腾黑苹果到现在我已经使用了款网卡款博通网卡我将在这里讲一下我使用它们的体验分为戴尔版联想版普通版等多个版本一定要在选购前与卖家沟通好区别貌似是戴尔版联想版需要屏蔽某些针脚中需要添加根据系统版本选择所有白苹果和蓝牙相关的功能都可以正常使用网卡的网速较差蓝牙连接耳机信号很差下还会偶尔搜不到需要在设备管理器中禁用再启用网卡白苹果拆机网卡需要搭配转接线转接板使用笔记本很难塞下塞下可能后盖就无法完全合上了三天线中间的是蓝牙天线需要买一条额外的天线笔记本自带的天线连两边的接口以保证信号的可用性中无需添加任何东西如果的连接速率过低或者无法识别到或者国家代码是需要添加并添加启动参数下信号和网速都很差蓝牙更是几乎无法使用而且需要安装驱动添加后可以驱动蓝牙和下网速较前两个网卡并没有太大提升但下的稳定性和速度有很大的提升无法使用隔空投送无线随航我的最终选择添加后可以驱动蓝牙和无法使用隔空投送无线随航但网速和蓝牙信号非常棒下的体验也很好是这里面唯一的蓝牙网卡而且价格比免驱网卡便宜很多推荐加元升级支持蓝牙而且最新版本的已经支持了我在更换网卡之前对手上有对几款网卡进行了测速下面是记录第次第次第次第次第次上传无驱动有驱动需要说明的是在相同位置对相同的笔记本开合角度使用进行测试单位路由器宽带广东电信因为上传速度浮动较小因此为次的平均估测值指驱动指和启动参数我的使用经验是的信号和在下的速度和兼容性好于它但在下的速度略逊于它的寻找因为我可以说只用过所以这里只讨论它而非推荐大家都使用升级如果不更新一般不建议更新更新视频教程下载下载我使用的配置的方法是用对应的新版打开旧文件更改一个参数然后保存再改回去然后保存该方法上面视频的主不推荐使用然后更改的启动路径新建一个路径指向我的电脑虽然老的启动路径也是这个但是它始终认为该路径没有启动文件然后会进入硬件自检关机硬件自检的死循环是仿冒的驱动用以支持非苹果原装或官方兼容硬件基本上和都能使用配置文件编辑器的配置文件本质上是一串无需编译的代码因此这些编辑器只是将代码用图形化界面展示便于查找和更改本质上在修改里面的值的时候还是在修改代码中的值所有文本编辑器因为的配置文件本质上是代码因此完全可以用文本编辑器修改只不过使用时需要清楚地知道目标项的名字才能搜索使用代码格式项目值前后要加项目名和项目名简称配置文件的官方编辑器一定要注意版本和版本的对应不是对应版本的版本号相同可以用来在中挂载分区下载简称开源编辑器支持注意版本和版本的对应目前我还没搞明白如何像一样双击打开只能手动拖入而且我也不知道如何用它挂载分区系统中可以用访问分区拷贝出修改完再复制回去下载跨平台编辑器友人推荐给我的我还没试过下载安装安装方法全新安装恢复版安装安装器安装教程黑果小兵的部落阁官网最干净的安装方法不过比较繁琐安装教程老吴黑苹果老吴黑苹果其实违反了开源协议很多的插件驱动是不能出售盈利的但是不得不说恢复版安装确实方便视频安装教程安装器由嘿我叫聪聪开发我认为更适合台式机安装使用跑码模式寻找无法进入系统的问题在的处添加使用文本编辑器则修改成如下面的代码所示引导各种卡及引导常见问题解决方案速查表合集配置错误故障与解决办法有问题可以在论坛查找或提问远景论坛我的笔电安装好黑苹果之后需要启动设置一下否则会卡在苹果处优化升级在大版本更新前一定要确认一下你的硬件在下一个大版本中是否支持之前有出现过网卡在下个大版本中不支持的情况一般来说确保你当前使用的版本支持最新版且也已经更新就可以使用系统的更新如果你之前以输代码等形式关闭了更新可以在里搜索下载更新升级时会多次自动重启电脑确保中有启动项时选择该项启动一般就可完成更新下载指定版本升级软件仅可运行或镜像和蓝牙有关功能的有时候会出现无法使用某些与和蓝牙有关的功能比如无法连接的热点无法隔空投送或无法无线随航这时退出黑苹果和你的每个苹果设备的再登陆同一个即可解决目前不知道这个出现的原因大概率因为序列号出现变化导致更换三码或某个苹果设备换新一些基本的设定三码洗白之前不建议登录因为可能导致封号不要开启系统偏好设置安全性与隐私文件保险箱不要开启查找我的默认开启关闭系统偏好设置电池电池电源适配器如果可能让硬盘进入睡眠启用电能小憩默认开启关闭关机重新启动选项下的再次登录时重新打开窗口三码洗白这是变频和使用的必要前提视频教程型号显示错误解决型号显示错误教程如果你的是英特尔正常发售的型号填写即可正常识别如果你的是版本或者的需要填写型号代码请注意中应填写十进制数需要将以上教程中的十六进制数转化为十进制填写例如的推荐代码应改为变频和频率显示的使用方法系统这里将使用升级因为这样可以最好地保存你的数据和洗白的三码等设置首先确保你已经升级到支持最新版本的并更新了这里可以参考其他人的保证你在更新这些以后可以正常使用然后便可像白苹果一样正常升级不过这里仍然推荐使用进行备份一旦出现问题可以恢复至更新前的系统仍然存在的一些小这些是我的出现的小你的设备不一定会出现但解决方法可作为参考合盖睡眠后无法唤醒风扇在转但屏幕一直不亮解决方法制作一个的盘启动盘在内优先启动盘选择体验过一段时间后关机再启动即可解决启动可能进入恢复模式解决方法开机显示时按选启动进入不要用启动关机后自动重启解决方法长按开机键关机如果从自动重启里进入可能导致锁频摄像头无法使用解决方法添加或到目录下耳机无法使用解决方法使用自己的一点感想的是真的香等我有钱一定换有钱谁还折腾黑苹果啊参考资料黑果小兵的部落格老吴黑苹果工作室',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-08-11 21:11:58',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="/./img/avatar.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://MiQieR.github.io/about/" title="个人简介"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2024/01/26/OvKRkv.jpg" alt="个人简介"/><span class="back-menu-item-text">个人简介</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://space.bilibili.com/32396508" title="B站主页"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/65b3af5d871b83018a16e135.png" alt="B站主页"/><span class="back-menu-item-text">B站主页</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://steamcommunity.com/profiles/76561198188551931/" title="Steam主页"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/65b3aed3871b83018a143eba.png" alt="Steam主页"/><span class="back-menu-item-text">Steam主页</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">MitchellsBox</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 分享</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/games/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-game"></use></svg><span> 游戏世界</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="/./img/alipay.jpg" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/./img/alipay.jpg"/></a><div class="post-qr-code-desc">支付宝</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/CUDA/" style="font-size: 1.05rem;">CUDA<sup>1</sup></a><a href="/tags/Git/" style="font-size: 1.05rem;">Git<sup>1</sup></a><a href="/tags/GitHub/" style="font-size: 1.05rem;">GitHub<sup>2</sup></a><a href="/tags/Hackintosh/" style="font-size: 1.05rem;">Hackintosh<sup>1</sup></a><a href="/tags/Hexo/" style="font-size: 1.05rem;">Hexo<sup>5</sup></a><a href="/tags/Linux/" style="font-size: 1.05rem;">Linux<sup>2</sup></a><a href="/tags/Markdown/" style="font-size: 1.05rem;">Markdown<sup>1</sup></a><a href="/tags/NAS/" style="font-size: 1.05rem;">NAS<sup>7</sup></a><a href="/tags/NVIDIA/" style="font-size: 1.05rem;">NVIDIA<sup>1</sup></a><a href="/tags/Sideload/" style="font-size: 1.05rem;">Sideload<sup>1</sup></a><a href="/tags/iOS/" style="font-size: 1.05rem;">iOS<sup>2</sup></a><a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.05rem;">前端<sup>5</sup></a><a href="/tags/%E5%BC%80%E5%8F%91/" style="font-size: 1.05rem;">开发<sup>2</sup></a><a href="/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/" style="font-size: 1.05rem;">开发板<sup>1</sup></a><a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 1.05rem;">技术<sup>1</sup></a><a href="/tags/%E6%8A%98%E8%85%BE/" style="font-size: 1.05rem;">折腾<sup>8</sup></a><a href="/tags/%E6%8D%A1%E5%9E%83%E5%9C%BE/" style="font-size: 1.05rem;">捡垃圾<sup>5</sup></a><a href="/tags/%E6%B5%81%E5%AA%92%E4%BD%93/" style="font-size: 1.05rem;">流媒体<sup>1</sup></a><a href="/tags/%E7%A0%B4%E8%A7%A3/" style="font-size: 1.05rem;">破解<sup>4</sup></a><a href="/tags/%E7%A1%AC%E7%9B%98/" style="font-size: 1.05rem;">硬盘<sup>5</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.05rem;">网络<sup>1</sup></a><a href="/tags/%E8%BD%AF%E8%B7%AF%E7%94%B1/" style="font-size: 1.05rem;">软路由<sup>2</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="anzhiyufont anzhiyu-icon-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/04/"><span class="card-archive-list-date">四月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/02/"><span class="card-archive-list-date">二月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/05/"><span class="card-archive-list-date">五月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/04/"><span class="card-archive-list-date">四月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/02/"><span class="card-archive-list-date">二月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">十二月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%98%E8%85%BE%E7%A0%B4%E8%A7%A3/" itemprop="url">折腾破解</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E6%8A%98%E8%85%BE/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>折腾</span></a><a class="article-meta__tags" href="/tags/%E6%8D%A1%E5%9E%83%E5%9C%BE/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>捡垃圾</span></a><a class="article-meta__tags" href="/tags/Hackintosh/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>Hackintosh</span></a><a class="article-meta__tags" href="/tags/%E7%A0%B4%E8%A7%A3/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>破解</span></a></span></div></div><h1 class="post-title" itemprop="name headline">黑苹果：戴尔XPS9360笔记本</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2021-09-20T02:01:00.000Z" title="发表于 2021-09-20 10:01:00">2021-09-20</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-08-11T13:11:58.901Z" title="更新于 2025-08-11 21:11:58">2025-08-11</time></span></div><div class="meta-secondline"><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为中国澳门"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>中国澳门</span><span class="post-meta-separator"></span><span class="post-meta-commentcount"><i class="anzhiyufont anzhiyu-icon-comments post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/Dell-XPS9360-Hackintosh/#post-comment" tabindex="-1"><span id="twikoo-count"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></a></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://i.loli.net/2021/09/24/gm1PSCnUrHtAb2u.jpg"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="https://miqier.github.io/Dell-XPS9360-Hackintosh/"><header><a class="post-meta-categories" href="/categories/%E6%8A%98%E8%85%BE%E7%A0%B4%E8%A7%A3/" itemprop="url">折腾破解</a><a href="/tags/%E6%8A%98%E8%85%BE/" tabindex="-1" itemprop="url">折腾</a><a href="/tags/%E6%8D%A1%E5%9E%83%E5%9C%BE/" tabindex="-1" itemprop="url">捡垃圾</a><a href="/tags/Hackintosh/" tabindex="-1" itemprop="url">Hackintosh</a><a href="/tags/%E7%A0%B4%E8%A7%A3/" tabindex="-1" itemprop="url">破解</a><h1 id="CrawlerTitle" itemprop="name headline">黑苹果：戴尔XPS9360笔记本</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">Mitchell</span><time itemprop="dateCreated datePublished" datetime="2021-09-20T02:01:00.000Z" title="发表于 2021-09-20 10:01:00">2021-09-20</time><time itemprop="dateCreated datePublished" datetime="2025-08-11T13:11:58.901Z" title="更新于 2025-08-11 21:11:58">2025-08-11</time></header><h2 id="Q-A"><a href="#Q-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><h3 id="为什么选择macOS？"><a href="#为什么选择macOS？" class="headerlink" title="为什么选择macOS？"></a>为什么选择macOS？</h3><p>这个问题，可以转化为，macOS有什么Windows10做不到的功能？</p>
+<ol>
+<li>苹果可以套牢用户的大杀器 —— iCloud。iCloud可以在你的iPhone、iPad之间同步几乎所有你跨设备操作时的数据：你的所有照片和视频、便签、通讯录、短信、提醒事项&#x2F;日程、iCloud云盘中的文件、甚至所有你记不住的那些账号和密码（iCloud钥匙串）… 除此之外，iCloud还能让你可以跨平台复制粘贴文字、接听电话和FaceTime、让你的iPad变身无线扩展屏（随航功能），将iPhone&#x2F;iPad上的画面或音乐投送到Mac（macOS 12）。 我认为，相比于华为那种将手机投屏到电脑，实现上述功能的做法，iCloud更加简洁。</li>
+<li>可以使用一些苹果自有的专业软件：Final Cut Pro X，一款视频剪辑软件，可以使用很多仅限FCPX的插件；Logic Pro，一款强大的音乐制作软件。</li>
+<li>iOS相比Android，用户付费率更高，App被盗版的可能性也更低，因此对小开发者而言，通常为iOS开发App的收入要高过为Android开发。而iOS开发，Xcode是必须的IDE，Xcode只能运行在macOS上。对我自己来说，Kite、Dash等工具可以辅助我编程，Xcode可以实时报错，简单的代码错误可以一键自动修改。</li>
+<li>对于有其他苹果设备的用户而言，如AirPods、Beats等的兼容性更好。</li>
+</ol>
+<h3 id="为什么选择黑苹果而不是白苹果？"><a href="#为什么选择黑苹果而不是白苹果？" class="headerlink" title="为什么选择黑苹果而不是白苹果？"></a>为什么选择黑苹果而不是白苹果？</h3><blockquote>
+<p>黑苹果：指在非苹果生成并销售的设备上运行的macOS<br>白苹果：苹果销售的Mac电脑</p>
+</blockquote>
+<p>我可以非常肯定地说，同价位黑苹果的性能远超白苹果，同时扩展性更强。<br>参考以下例子：</p>
+<ul>
+<li><p>MacBook Pro13 2015，8G内存+256G硬盘，CPU为i5-5257U（双核四线程，主频2.7Ghz，最高睿频3.1Ghz，3MB三级缓存），显卡为Iris Graphics 6100；参考跑分：Cinebench R20单核277分，多核706分</p>
+</li>
+<li><p>同价位我的XPS13 9360，8G内存+256G硬盘，CPU为i5-8250U（四核八线程，主频1.6Ghz，单核睿频最高3.4Ghz，全核睿频最高2.3Ghz，6MB三级缓存），显卡为UHD620；参考跑分：Cinebench R20单核348分，多核1509分</p>
+</li>
+</ul>
+<br/>
+
+<hr>
+<h2 id="硬件的选择"><a href="#硬件的选择" class="headerlink" title="硬件的选择"></a>硬件的选择</h2><h3 id="戴尔Dell-XPS13-9360-笔记本"><a href="#戴尔Dell-XPS13-9360-笔记本" class="headerlink" title="戴尔Dell XPS13-9360 笔记本"></a>戴尔Dell XPS13-9360 笔记本</h3><p>CPU：Intel i5-8250U<br>显卡：Intel UHD620<br>内存：LPDDR3 8GB @1867Mhz<br>SSD：KIOXIA RC10 512GB<br>网卡：Intel AX200<br>声卡：alc256<br>显示器：13.3inch 1080P @60hz<br>扩展坞：Dell DA300（使用HDMI接口会发热严重，使用DP则不会）<br>BIOS版本：2.16.0</p>
+<h3 id="BIOS设置"><a href="#BIOS设置" class="headerlink" title="BIOS设置"></a>BIOS设置</h3><p><strong>Disable C-States</strong>（如果你更换了硬盘，开启该选项可能导致<strong>win10卡死</strong><a class="btn-anzhiyu outline" target="_blank" rel="noopener" href="https://blog.csdn.net/lzrreach/article/details/76359388/" 
+  title="查看原因"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>查看原因</span></a>）<br>Sata: AHCI<br>Disable Secure Boot<br>Enable VT<br><strong>Disable VT-D</strong><br>Disable SD card reader (可选，关闭节省0.5w功耗)</p>
+<h3 id="无线网卡的选择"><a href="#无线网卡的选择" class="headerlink" title="无线网卡的选择"></a>无线网卡的选择</h3><p>无线网卡的选购也可参考这篇文章<a class="btn-anzhiyu outline orange" target="_blank" rel="noopener" href="http://k61.org/a7f5fe4a.html" 
+  title="黑苹果无线网卡购买指南"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>黑苹果无线网卡购买指南</span></a><br>很多英特尔网卡可以被驱动，感谢<a target="_blank" rel="noopener" href="https://openintelwireless.github.io/">OpenIntelWireless</a>，网速可能能秒杀上面提到的博通网卡，几乎完美兼容，很多网卡焊死在主板上的笔记本可以不用USB网卡了</p>
+<ul>
+<li><p>一些英特尔网卡可以靠AirportItlwm.kext或itlwm.kext驱动WiFi（需要定制USB驱动），推荐使用前者，后者需要搭配HeliPort使用</p>
+<ul>
+<li>Intel网卡完整兼容列表<a class="btn-anzhiyu blue" target="_blank" rel="noopener" href="https://openIntelwireless.github.io/itlwm/Compat.html" 
+  title="OpenIntelWireless"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>OpenIntelWireless</span></a></li>
+<li>下载AirportItlwm.kext和itlwm.kext<a class="btn-anzhiyu blue" target="_blank" rel="noopener" href="https://github.com/OpenIntelWireless/itlwm" 
+  title="GitHub"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>GitHub</span></a></li>
+<li>下载HeliPort<a class="btn-anzhiyu blue" target="_blank" rel="noopener" href="https://github.com/OpenIntelWireless/HeliPort" 
+  title="GitHub"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>GitHub</span></a></li>
+</ul>
+</li>
+<li><p>macOS12 Monterey驱动蓝牙方法</p>
+<ul>
+<li>博通非苹果原装网卡，比如DW1560&#x2F;BCM94352Z：更新Lilu至最新版本，添加<code>BlueToolFixup.kext</code>并禁用或删除<code>BrcmBluetoothInjector.kext</code></li>
+<li>英特尔网卡，比如AX200：更新Lilu至最新版本，添加<code>BlueToolFixup.kext</code>并禁用或删除 <code>IntelBluetoothInjector.kext</code><ul>
+<li>下载BlueToolFixup.kext<a class="btn-anzhiyu blue" target="_blank" rel="noopener" href="https://github.com/acidanthera/BrcmPatchRAM/" 
+  title="GitHub"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>GitHub</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="我的一些网卡使用经验"><a href="#我的一些网卡使用经验" class="headerlink" title="我的一些网卡使用经验"></a>我的一些网卡使用经验</h4><p>从开始折腾黑苹果到现在，我已经使用了2款Intel网卡，2款博通网卡，我将在这里讲一下我使用它们的体验。</p>
+<div class="tabs" id="我的网卡使用经验"><ul class="nav-tabs"><button type="button" class="tab " data-href="我的网卡使用经验-1">DW1560/BCM94352Z</button><button type="button" class="tab " data-href="我的网卡使用经验-2">BCM943602CS</button><button type="button" class="tab " data-href="我的网卡使用经验-3">7265AC</button><button type="button" class="tab  active" data-href="我的网卡使用经验-4">AX200/AX210</button></ul><div class="tab-contents"><div class="tab-item-content" id="我的网卡使用经验-1"><p>分为戴尔版、联想版、普通版等多个版本，一定要在选购前与卖家沟通好，区别貌似是戴尔版&#x2F;联想版需要屏蔽某些针脚；kext中需要添加<code>AirportBrcmFixup.kext</code>，<code>BrcmBluetoothInjector.kext</code>，<code>BrcmFirmwareData.kext</code>，<code>BrcmPatchRAM3.kext</code>（根据系统版本选择<code>BrcmPatchRAM1/2/3.kext</code>）。<br>所有白苹果和蓝牙相关的功能都可以正常使用，网卡的网速较差，蓝牙连接耳机信号很差，Windows下还会偶尔搜不到WiFi，需要在设备管理器中禁用再启用网卡。</p></div><div class="tab-item-content" id="我的网卡使用经验-2"><p>白苹果拆机网卡，需要搭配转接线&#x2F;转接板使用（笔记本很难塞下，塞下可能后盖就无法完全合上了）；三天线，中间的是蓝牙天线，需要买一条额外的天线，笔记本自带的天线连两边的接口以保证WiFi信号的可用性；kext中无需添加任何东西，如果WiFi的连接速率过低或者无法识别到SSID或者国家代码是US，需要添加<code>AirPortBrcmFixup.kext</code>，并添加启动参数<code>brcmfx-country=#a</code>；Windows下信号和网速都很差，蓝牙更是几乎无法使用，而且需要安装驱动。</p></div><div class="tab-item-content" id="我的网卡使用经验-3"><p>添加<code>AirportItlwm.kext</code>，<code>IntelBluetoothInjector.kext</code>，<code>IntelBluetoothFirmware.kext</code>后可以驱动蓝牙和WiFi，macOS下网速较前两个网卡并没有太大提升，但Windows下的稳定性和速度有很大的提升；无法使用隔空投送、无线随航。</p></div><div class="tab-item-content active" id="我的网卡使用经验-4"><p>我的最终选择。macOS Monterey添加<code>AirportItlwm.kext</code>，<code>BlueToolFixup.kext</code>，<code>IntelBluetoothFirmware.kext</code>后可以驱动蓝牙和WiFi，无法使用隔空投送、无线随航，但网速和蓝牙信号非常棒，Windows下的体验也很好；是这里面唯一的WiFi6+蓝牙5.1网卡，而且价格比免驱网卡便宜很多；推荐加10元升级AX210，支持WiFi6e，蓝牙5.2，而且最新版本的<code>AirportItlwm.kext</code>已经支持了AX210。</p></div></div><div class="tab-to-top"><button type="button" aria-label="scroll to top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div>
+
+<p>我在更换网卡之前，对手上有对几款网卡进行了测速，下面是记录：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">第1次</th>
+<th align="center">第2次</th>
+<th align="center">第3次</th>
+<th align="center">第4次</th>
+<th align="center">第5次</th>
+<th align="center">上传</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>943602 macos无驱动</td>
+<td align="center">69.07</td>
+<td align="center">67.14</td>
+<td align="center">89.94</td>
+<td align="center">94.14</td>
+<td align="center">76.2</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td>943602 macos有驱动</td>
+<td align="center">66.7</td>
+<td align="center">53.6</td>
+<td align="center">64.64</td>
+<td align="center">58.93</td>
+<td align="center">59.66</td>
+<td align="center">25</td>
+</tr>
+<tr>
+<td>943602 win10</td>
+<td align="center">9.52</td>
+<td align="center">6.03</td>
+<td align="center">4.97</td>
+<td align="center">4.44</td>
+<td align="center">30.44</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td>943602 win10 (2.4Ghz)</td>
+<td align="center">55.4</td>
+<td align="center">49.34</td>
+<td align="center">52.43</td>
+<td align="center">52.06</td>
+<td align="center">50.33</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td>Killer 1535 win10</td>
+<td align="center">88.33</td>
+<td align="center">73.39</td>
+<td align="center">89.57</td>
+<td align="center">142.22</td>
+<td align="center">132.25</td>
+<td align="center">40</td>
+</tr>
+<tr>
+<td>AX200 win10</td>
+<td align="center">153.37</td>
+<td align="center">140.05</td>
+<td align="center">196.63</td>
+<td align="center">139.9</td>
+<td align="center">191.88</td>
+<td align="center">40</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>需要说明的是：</strong><br>在相同位置，对相同的笔记本开合角度，使用speedtest进行测试；单位：Mbps；路由器：ASUS AC88U；宽带：300M广东电信；因为上传速度浮动较小，因此为5次的平均估测值；943602指BCM943602CS，驱动指<code>AirPortBrcmFixup.kext</code>和启动参数<code>brcmfx-country=#a</code>，我的使用经验是DW1560的信号和在win下的速度和兼容性好于它，但在macOS下的速度略逊于它。</p>
+</blockquote>
+<br/>
+
+<hr>
+<h2 id="EFI的寻找"><a href="#EFI的寻找" class="headerlink" title="EFI的寻找"></a>EFI的寻找</h2><h3 id="OpenCore"><a href="#OpenCore" class="headerlink" title="OpenCore"></a>OpenCore</h3><p>因为我可以说只用过OC，所以这里只讨论它，而非Clover；推荐大家都使用OC。</p>
+<h4 id="升级OpenCore"><a href="#升级OpenCore" class="headerlink" title="升级OpenCore"></a>升级OpenCore</h4><blockquote>
+<p>如果不更新MacOS，一般不建议更新OC。</p>
+</blockquote>
+<p>更新OC视频教程 <a class="btn-anzhiyu pink" target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV13U4y177QV/" 
+  title="Bilibili"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>Bilibili</span></a><br>下载OC <a class="btn-anzhiyu blue" target="_blank" rel="noopener" href="https://github.com/acidanthera/OpenCorePkg/releases/" 
+  title="GitHub"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>GitHub</span></a><br>下载OCC <a class="btn-anzhiyu " target="_blank" rel="noopener" href="https://mackie100projects.altervista.org/download-opencore-configurator/" 
+  title="mackie100"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>mackie100</span></a></p>
+<ul>
+<li>我使用的配置config.plist的方法是用对应的新版OCC打开旧config.plist文件，更改一个参数然后保存，再改回去然后保存。该方法上面视频的up主不推荐使用。</li>
+<li>然后更改BIOS的启动路径，新建一个路径，指向EFI&#x2F;OC&#x2F;OpenCore.efi（我的电脑虽然老的启动路径也是这个，但是它始终认为该路径没有启动文件，然后会进入硬件自检-关机-硬件自检的死循环）。</li>
+</ul>
+<h3 id="kexts"><a href="#kexts" class="headerlink" title="kexts"></a>kexts</h3><p>kext是仿冒的Apple驱动，用以支持非苹果原装或官方兼容硬件，基本上OC和Clover都能使用。</p>
+<br/>
+
+<hr>
+<h2 id="OC配置文件编辑器"><a href="#OC配置文件编辑器" class="headerlink" title="OC配置文件编辑器"></a>OC配置文件编辑器</h2><p>OC的配置文件（config.plist）本质上是一串无需编译的代码，因此这些编辑器只是将代码用图形化界面展示，便于查找和更改，本质上在修改里面的值的时候，还是在修改代码中的值。</p>
+<h3 id="所有文本编辑器"><a href="#所有文本编辑器" class="headerlink" title="所有文本编辑器"></a>所有文本编辑器</h3><p>因为OC的配置文件本质上是代码，因此完全可以用文本编辑器修改，只不过使用时需要清楚地知道目标项的名字，才能搜索。使用xml代码格式，项目值前后要加&lt;项目名&gt;和&lt;&#x2F;项目名&gt;。</p>
+<h3 id="OpenCore-Configurator（简称OCC）"><a href="#OpenCore-Configurator（简称OCC）" class="headerlink" title="OpenCore Configurator（简称OCC）"></a>OpenCore Configurator（简称OCC）</h3><p>OC配置文件的官方编辑器，一定要注意OC版本和OCC版本的对应（不是对应版本的版本号相同）。<br>可以用来在macOS中挂载EFI分区。</p>
+<p>下载OCC <a class="btn-anzhiyu " target="_blank" rel="noopener" href="https://mackie100projects.altervista.org/download-opencore-configurator/" 
+  title="mackie100"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>mackie100</span></a></p>
+<h3 id="OC-Auxiliary-Tools（简称OCAT）"><a href="#OC-Auxiliary-Tools（简称OCAT）" class="headerlink" title="OC Auxiliary Tools（简称OCAT）"></a>OC Auxiliary Tools（简称OCAT）</h3><p>开源编辑器，支持macOS、Windows、Linux，注意OC版本和OCAT版本的对应<br>目前我还没搞明白如何像OCC一样双击config.plist打开，只能手动拖入config.plist，而且我也不知道如何用它挂载EFI分区。</p>
+<blockquote>
+<p>Windows系统中可以用DiskGenius访问EFI分区，拷贝出config.plist，修改完再复制回去。</p>
+</blockquote>
+<p>下载OCAT <a class="btn-anzhiyu " target="_blank" rel="noopener" href="https://github.com/ic005k/QtOpenCoreConfig/releases" 
+  title="GitHub"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>GitHub</span></a></p>
+<h3 id="ProperTree"><a href="#ProperTree" class="headerlink" title="ProperTree"></a>ProperTree</h3><p>跨平台plist编辑器，友人推荐给我的，我还没试过。<br>下载ProperTree <a class="btn-anzhiyu " target="_blank" rel="noopener" href="https://github.com/corpnewt/ProperTree/" 
+  title="GitHub"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>GitHub</span></a></p>
+<br/>
+
+<hr>
+<h2 id="安装macOS"><a href="#安装macOS" class="headerlink" title="安装macOS"></a>安装macOS</h2><h3 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h3><div class="tabs" id="黑苹果安装方法"><ul class="nav-tabs"><button type="button" class="tab  active" data-href="黑苹果安装方法-1">全新安装</button><button type="button" class="tab " data-href="黑苹果安装方法-2">恢复版安装</button><button type="button" class="tab " data-href="黑苹果安装方法-3">Cc3.0安装器</button></ul><div class="tab-contents"><div class="tab-item-content active" id="黑苹果安装方法-1"><p>安装教程 <a class="btn-anzhiyu green" target="_blank" rel="noopener" href="https://blog.daliansky.net/" 
+  title="黑果小兵的部落阁官网"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>黑果小兵的部落阁官网</span></a><br>最干净的安装方法，不过比较繁琐。</p></div><div class="tab-item-content" id="黑苹果安装方法-2"><p>安装教程 <a class="btn-anzhiyu purple" target="_blank" rel="noopener" href="http://k61.org/Win10-macOS-hackintosh-Restore.html/" 
+  title="老吴黑苹果"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>老吴黑苹果</span></a><br>老吴黑苹果其实违反了开源协议，很多OpenCore的插件、驱动是不能出售盈利的。但是不得不说恢复版安装确实方便。</p></div><div class="tab-item-content" id="黑苹果安装方法-3"><p>视频安装教程 <a class="btn-anzhiyu pink" target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1iE41157Vd/" 
+  title="Bilibili"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>Bilibili</span></a><br>安装器由 @嘿我叫聪聪 开发，我认为更适合台式机安装。</p></div></div><div class="tab-to-top"><button type="button" aria-label="scroll to top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div>
+
+<h3 id="使用跑码模式寻找无法进入系统的问题"><a href="#使用跑码模式寻找无法进入系统的问题" class="headerlink" title="使用跑码模式寻找无法进入系统的问题"></a>使用跑码模式寻找无法进入系统的问题</h3><p>在 <code>NVRAM</code> - <code>7C436110-AB2A-4BBB-A880-FE41995C9F82</code> - <code>boot-args</code> 的value处添加<code>-v</code></p>
+<p>使用文本编辑器，则修改成如下面的代码所示：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">key</span>&gt;</span>7C436110-AB2A-4BBB-A880-FE41995C9F82<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">key</span>&gt;</span>boot-args<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">string</span>&gt;</span>darkwake=4 -v<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="http://imacos.top/2021/01/19/0154/">OpenCore引导-v各种卡及OC引导常见问题解决方案速查表合集</a><br><a target="_blank" rel="noopener" href="https://blog.51cto.com/u_2035505/2488066/">OpenCore配置错误、故障与解决办法</a></p>
+<p>有问题可以在论坛查找或提问 <a class="btn-anzhiyu blue" target="_blank" rel="noopener" href="https://bbs.pcbeta.com/index.php?gid=86/" 
+  title="远景论坛"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>远景论坛</span></a></p>
+<h3 id="DVMT"><a href="#DVMT" class="headerlink" title="DVMT"></a>DVMT</h3><p>我的XPS笔电安装好黑苹果之后需要启动DVMT.efi设置一下，否则会卡在苹果logo处</p>
+<br/>
+
+<hr>
+<h2 id="优化macOS"><a href="#优化macOS" class="headerlink" title="优化macOS"></a>优化macOS</h2><h3 id="升级macOS"><a href="#升级macOS" class="headerlink" title="升级macOS"></a>升级macOS</h3><blockquote>
+<p>在大版本更新前，一定要确认一下你的硬件在下一个大版本中是否支持。之前有出现过网卡在下个大版本中不支持的情况</p>
+</blockquote>
+<p>一般来说，确保你当前使用的OC版本支持最新版macOS，且kext也已经更新，就可以使用系统的OTA更新<br>（如果你之前以输代码等形式关闭了更新，可以在App Store里搜索macOS下载更新）<br>升级时会多次自动重启电脑，确保OC中有Macintosh HD启动项时选择该项启动，一般就可完成更新</p>
+<p><a target="_blank" rel="noopener" href="https://sysin.org/blog/macOS/">下载指定版本升级软件（仅macOS可运行）或镜像</a></p>
+<h3 id="和Wi-Fi蓝牙有关功能的bug"><a href="#和Wi-Fi蓝牙有关功能的bug" class="headerlink" title="和Wi-Fi蓝牙有关功能的bug"></a>和Wi-Fi蓝牙有关功能的bug</h3><p>有时候会出现无法使用某些与WiFi和蓝牙有关的功能，比如无法连接iPhone的WiFi热点，无法隔空投送，或无法无线随航。这时退出黑苹果和你的每个苹果设备的iCloud，再登陆同一个iCloud即可解决。<br>目前不知道这个bug出现的原因，大概率因为序列号出现变化导致（更换三码或某个苹果设备换新）</p>
+<h3 id="一些基本的设定"><a href="#一些基本的设定" class="headerlink" title="一些基本的设定"></a>一些基本的设定</h3><ul>
+<li><strong>三码洗白之前不建议登录iCloud！</strong> 因为可能导致封号</li>
+<li>不要开启系统偏好设置-安全性与隐私-文件保险箱</li>
+<li>不要开启查找我的Mac</li>
+<li>（默认开启）关闭系统偏好设置-电池-电池&amp;电源适配器-如果可能，让硬盘进入睡眠&amp;启用电能小憩</li>
+<li>（默认开启）关闭关机&#x2F;重新启动选项下的“再次登录时重新打开窗口”</li>
+</ul>
+<h3 id="三码洗白"><a href="#三码洗白" class="headerlink" title="三码洗白"></a>三码洗白</h3><p>这是Intel CPU变频和使用FaceTime、iMssage的必要前提<br>视频教程 <a class="btn-anzhiyu pink" target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1454y167ML/" 
+  title="Bilibili"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>Bilibili</span></a></p>
+<h3 id="CPU型号显示错误"><a href="#CPU型号显示错误" class="headerlink" title="CPU型号显示错误"></a>CPU型号显示错误</h3><p><a target="_blank" rel="noopener" href="http://k61.org/unkown-CPU-fix-hackintosh.html/">解决CPU型号显示错误教程</a><br>如果你的CPU是英特尔正常发售的型号，填写0即可正常识别；如果你的CPU是ES版本或者AMD的，需要填写型号代码；<br>请注意，OC Configurator中应填写十进制数，需要将以上教程中的十六进制数转化为十进制填写，例如i5的推荐代码0x0605应改为1541</p>
+<h3 id="CPU变频和频率显示"><a href="#CPU变频和频率显示" class="headerlink" title="CPU变频和频率显示"></a>CPU变频和频率显示</h3><p><a target="_blank" rel="noopener" href="https://www.136.la/jingpin/show-36559.html?ivk_sa=1025883j/">CPUFriend.kext的使用方法</a></p>
+<h3 id="系统macOS"><a href="#系统macOS" class="headerlink" title="系统macOS"></a>系统macOS</h3><ul>
+<li>这里将使用OTA升级macOS。因为这样可以最好地保存你的数据和洗白的三码等设置。<br>首先确保你已经升级到支持最新版本macOS的OC，并更新了kext。这里可以参考其他人的EFI。保证你在更新这些以后可以正常使用，然后便可像白苹果一样正常OTA升级。不过这里仍然推荐使用Paragon Hard Disk Manager进行备份，一旦出现问题，可以恢复至更新前的系统</li>
+</ul>
+<h3 id="仍然存在的一些小bug"><a href="#仍然存在的一些小bug" class="headerlink" title="仍然存在的一些小bug"></a>仍然存在的一些小bug</h3><blockquote>
+<p>这些是我的XPS9360出现的小bug，你的设备不一定会出现，但解决方法可作为参考</p>
+</blockquote>
+<ol>
+<li>合盖睡眠后无法唤醒，风扇在转，但屏幕一直不亮    -解决方法：制作一个<a target="_blank" rel="noopener" href="https://ubuntu.com/download/desktop">Ubuntu</a>的U盘启动盘，在BIOS内优先启动U盘，选择体验Ubuntu，过一段时间后关机，再启动macOS即可解决</li>
+<li>OC启动win10可能进入恢复模式    -解决方法：开机显示DELL logo时按F12，选Windows Boot Manager启动进入win10；不要用OC启动win10</li>
+<li>macOS关机后自动重启    -解决方法：长按开机键关机。如果从自动重启里进入win10，可能导致CPU锁频0.4Ghz</li>
+<li>摄像头无法使用    -解决方法：添加<a target="_blank" rel="noopener" href="https://github.com/hoanX/xps13-9360-Hackintosh/tree/master/kexts/UVC2FaceTimeHD.kext">UVC2FaceTimeHD.kext</a>或<a target="_blank" rel="noopener" href="https://github.com/hoanX/xps13-9360-Hackintosh/tree/master/kexts/FaceTimeHD.kext">FaceTimeHD.kext</a>到EFI&#x2F;OC&#x2F;kext目录下</li>
+<li>耳机无法使用    -解决方法：使用<a target="_blank" rel="noopener" href="https://github.com/hackintosh-stuff/ComboJack">ComboJack</a></li>
+</ol>
+<br/>
+
+<hr>
+<h2 id="自己的一点感想"><a href="#自己的一点感想" class="headerlink" title="自己的一点感想"></a>自己的一点感想</h2><p>Apple Silicon 的 MacBook 是真的香，等我有钱一定换（有钱谁还折腾黑苹果啊）。</p>
+<br/>
+
+<hr>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://blog.daliansky.net/">黑果小兵的部落格</a></li>
+<li><a target="_blank" rel="noopener" href="https://win2mac.top/">老吴黑苹果工作室</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/theQuert/XPS-9360-macOS/">@theQuert</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hoanX/xps13-9360-Hackintosh/">@hoanX</a></li>
+</ul>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/./img/avatar.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/./img/avatar.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">Mitchell</div><div class="post-copyright__author_desc">生活明朗 万物可爱</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://miqier.github.io/Dell-XPS9360-Hackintosh/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('https://miqier.github.io/Dell-XPS9360-Hackintosh/')">黑苹果：戴尔XPS9360笔记本</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://miqier.github.io/Dell-XPS9360-Hackintosh/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=黑苹果：戴尔XPS9360笔记本&amp;url=https://miqier.github.io/Dell-XPS9360-Hackintosh/&amp;pic=https://i.loli.net/2021/09/24/gm1PSCnUrHtAb2u.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://MiQieR.github.io" target="_blank">MitchellsBox</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E6%8A%98%E8%85%BE/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>折腾<span class="tagsPageCount">8</span></a><a class="post-meta__box__tags" href="/tags/%E6%8D%A1%E5%9E%83%E5%9C%BE/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>捡垃圾<span class="tagsPageCount">5</span></a><a class="post-meta__box__tags" href="/tags/Hackintosh/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>Hackintosh<span class="tagsPageCount">1</span></a><a class="post-meta__box__tags" href="/tags/%E7%A0%B4%E8%A7%A3/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>破解<span class="tagsPageCount">4</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://ooo.0x0.ooo/2025/04/13/O0X0fr.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/iOS-Sideloading-AltStore/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2024/08/19/Otmzqx.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">iOS使用AltStore侧载教程</div></div></a></div><div class="next-post pull-right"><a href="/DIY-x86-NAS/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2024/08/19/Otg9GD.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">自建Windows系统4盘位NAS</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>喜欢这篇文章的人也看了</span></div><div class="relatedPosts-list"><div><a href="/Pocket-WiFi-with-Snapdragon-410/" title="折腾搭载高通410的随身WiFi"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s3.bmp.ovh/imgs/2022/08/09/57be2707346994f9.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2022-08-06</div><div class="title">折腾搭载高通410的随身WiFi</div></div></a></div><div><a href="/Chainedbox-OMV/" title="我家云安装OMV：单盘NAS"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2024/08/19/OtggFC.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2022-12-18</div><div class="title">我家云安装OMV：单盘NAS</div></div></a></div><div><a href="/Chainedbox-OpenWrt/" title="我家云安装OpenWrt：作为旁路由&#x2F;软路由+轻量化NAS"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2024/08/19/OtgNyB.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-02-18</div><div class="title">我家云安装OpenWrt：作为旁路由&#x2F;软路由+轻量化NAS</div></div></a></div><div><a href="/iOS-TrollStore/" title="TrollStore：IPA 无限量永久签名"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2024/05/15/OJ7mij.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2024-05-15</div><div class="title">TrollStore：IPA 无限量永久签名</div></div></a></div><div><a href="/ASUS-Router-Light-NAS/" title="华硕路由：也是轻量级NAS"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2024/08/19/OtgHep.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2022-07-16</div><div class="title">华硕路由：也是轻量级NAS</div></div></a></div><div><a href="/Automatically-generate-video/" title="利用开源软件一键生成视频"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2024/04/20/OpWngj.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2024-04-20</div><div class="title">利用开源软件一键生成视频</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a><a href="/privacy" style="margin-left: 4px">隐私政策</a></div><div class="comment-tips" id="comment-tips"><span>✅ 你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/./img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png" alt="status"/></div></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这里是Mitchell的百宝箱，里面有<b style="color:#fff">学习、开发、折腾</b>的经验和分享，还有关于<b style="color:#fff">生活</b>的思考与感悟。</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/about/"><h1 class="author-info__name">Mitchell</h1><div class="author-info__desc">生活明朗 万物可爱</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/MiQieR" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/32396508" target="_blank" title="BiliBili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来看我的博客鸭~<br>现已更换博客主题!</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-A"><span class="toc-number">1.</span> <span class="toc-text">Q&amp;A</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9macOS%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">为什么选择macOS？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9%E9%BB%91%E8%8B%B9%E6%9E%9C%E8%80%8C%E4%B8%8D%E6%98%AF%E7%99%BD%E8%8B%B9%E6%9E%9C%EF%BC%9F"><span class="toc-number">1.2.</span> <span class="toc-text">为什么选择黑苹果而不是白苹果？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A1%AC%E4%BB%B6%E7%9A%84%E9%80%89%E6%8B%A9"><span class="toc-number">2.</span> <span class="toc-text">硬件的选择</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%B4%E5%B0%94Dell-XPS13-9360-%E7%AC%94%E8%AE%B0%E6%9C%AC"><span class="toc-number">2.1.</span> <span class="toc-text">戴尔Dell XPS13-9360 笔记本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BIOS%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.2.</span> <span class="toc-text">BIOS设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1%E7%9A%84%E9%80%89%E6%8B%A9"><span class="toc-number">2.3.</span> <span class="toc-text">无线网卡的选择</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BD%91%E5%8D%A1%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C"><span class="toc-number">2.3.1.</span> <span class="toc-text">我的一些网卡使用经验</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EFI%E7%9A%84%E5%AF%BB%E6%89%BE"><span class="toc-number">3.</span> <span class="toc-text">EFI的寻找</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#OpenCore"><span class="toc-number">3.1.</span> <span class="toc-text">OpenCore</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7OpenCore"><span class="toc-number">3.1.1.</span> <span class="toc-text">升级OpenCore</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#kexts"><span class="toc-number">3.2.</span> <span class="toc-text">kexts</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OC%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">4.</span> <span class="toc-text">OC配置文件编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%80%E6%9C%89%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">4.1.</span> <span class="toc-text">所有文本编辑器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OpenCore-Configurator%EF%BC%88%E7%AE%80%E7%A7%B0OCC%EF%BC%89"><span class="toc-number">4.2.</span> <span class="toc-text">OpenCore Configurator（简称OCC）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OC-Auxiliary-Tools%EF%BC%88%E7%AE%80%E7%A7%B0OCAT%EF%BC%89"><span class="toc-number">4.3.</span> <span class="toc-text">OC Auxiliary Tools（简称OCAT）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ProperTree"><span class="toc-number">4.4.</span> <span class="toc-text">ProperTree</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85macOS"><span class="toc-number">5.</span> <span class="toc-text">安装macOS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95"><span class="toc-number">5.1.</span> <span class="toc-text">安装方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E8%B7%91%E7%A0%81%E6%A8%A1%E5%BC%8F%E5%AF%BB%E6%89%BE%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">5.2.</span> <span class="toc-text">使用跑码模式寻找无法进入系统的问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DVMT"><span class="toc-number">5.3.</span> <span class="toc-text">DVMT</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E5%8C%96macOS"><span class="toc-number">6.</span> <span class="toc-text">优化macOS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7macOS"><span class="toc-number">6.1.</span> <span class="toc-text">升级macOS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%92%8CWi-Fi%E8%93%9D%E7%89%99%E6%9C%89%E5%85%B3%E5%8A%9F%E8%83%BD%E7%9A%84bug"><span class="toc-number">6.2.</span> <span class="toc-text">和Wi-Fi蓝牙有关功能的bug</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E7%9A%84%E8%AE%BE%E5%AE%9A"><span class="toc-number">6.3.</span> <span class="toc-text">一些基本的设定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%A0%81%E6%B4%97%E7%99%BD"><span class="toc-number">6.4.</span> <span class="toc-text">三码洗白</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CPU%E5%9E%8B%E5%8F%B7%E6%98%BE%E7%A4%BA%E9%94%99%E8%AF%AF"><span class="toc-number">6.5.</span> <span class="toc-text">CPU型号显示错误</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CPU%E5%8F%98%E9%A2%91%E5%92%8C%E9%A2%91%E7%8E%87%E6%98%BE%E7%A4%BA"><span class="toc-number">6.6.</span> <span class="toc-text">CPU变频和频率显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9FmacOS"><span class="toc-number">6.7.</span> <span class="toc-text">系统macOS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8D%E7%84%B6%E5%AD%98%E5%9C%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8Fbug"><span class="toc-number">6.8.</span> <span class="toc-text">仍然存在的一些小bug</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%80%E7%82%B9%E6%84%9F%E6%83%B3"><span class="toc-number">7.</span> <span class="toc-text">自己的一点感想</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">8.</span> <span class="toc-text">参考资料</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Linux-Fedora-NVIDIA-CUDA/" title="从安装Linux to Go到NVIDIA驱动和CUDA"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2025/04/13/O0X0fr.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从安装Linux to Go到NVIDIA驱动和CUDA"/></a><div class="content"><a class="title" href="/Linux-Fedora-NVIDIA-CUDA/" title="从安装Linux to Go到NVIDIA驱动和CUDA">从安装Linux to Go到NVIDIA驱动和CUDA</a><time datetime="2025-04-12T17:50:00.000Z" title="发表于 2025-04-13 01:50:00">2025-04-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Git_GitHub_Code_Version_Control/" title="使用 Git 和 GitHub 版本控制和代码同步"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/689dd96e58cb8da5c8251d96.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用 Git 和 GitHub 版本控制和代码同步"/></a><div class="content"><a class="title" href="/Git_GitHub_Code_Version_Control/" title="使用 Git 和 GitHub 版本控制和代码同步">使用 Git 和 GitHub 版本控制和代码同步</a><time datetime="2025-02-18T10:37:48.000Z" title="发表于 2025-02-18 18:37:48">2025-02-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Cloudflare-Free-CDN/" title="为博客配置Cloudflare免费CDN加速"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2024/04/20/OpW1Vp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="为博客配置Cloudflare免费CDN加速"/></a><div class="content"><a class="title" href="/Cloudflare-Free-CDN/" title="为博客配置Cloudflare免费CDN加速">为博客配置Cloudflare免费CDN加速</a><time datetime="2024-05-28T16:20:00.000Z" title="发表于 2024-05-29 00:20:00">2024-05-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/iOS-TrollStore/" title="TrollStore：IPA 无限量永久签名"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2024/05/15/OJ7mij.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="TrollStore：IPA 无限量永久签名"/></a><div class="content"><a class="title" href="/iOS-TrollStore/" title="TrollStore：IPA 无限量永久签名">TrollStore：IPA 无限量永久签名</a><time datetime="2024-05-15T12:59:34.000Z" title="发表于 2024-05-15 20:59:34">2024-05-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Automatically-generate-video/" title="利用开源软件一键生成视频"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2024/04/20/OpWngj.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="利用开源软件一键生成视频"/></a><div class="content"><a class="title" href="/Automatically-generate-video/" title="利用开源软件一键生成视频">利用开源软件一键生成视频</a><time datetime="2024-04-20T11:14:02.000Z" title="发表于 2024-04-20 19:14:02">2024-04-20</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="workboard"><img class="workSituationImg boardsign" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://i.loli.wiki/public/240126/studying.svg" alt="距离发表SCI也就还差一个大佬带我~" title="距离发表SCI也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo v5.4.2" title="博客框架为Hexo v5.4.2"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo v5.4.2"/></a><a class="github-badge" target="_blank" href="https://blog.anheyu.com/" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a><a class="github-badge" target="_blank" href="https://www.dynadot.com/" style="margin-inline:5px" data-title="Dynadot为本站提供CDN加速" title="Dynadot为本站提供CDN加速"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.shields.io/badge/CDN-Dynadot-orange?style=flat&amp;logo=jsdelivr&amp;label=CDN" alt="Dynadot为本站提供CDN加速"/></a><a class="github-badge" target="_blank" href="https://github.com/MiQieR/miqier.github.io/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2021 - 2025 By <a class="footer-bar-link" href="/" title="Mitchell" target="_blank">Mitchell</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">22</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">4</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://MiQieR.github.io/about/" title="个人简介"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ooo.0x0.ooo/2024/01/26/OvKRkv.jpg" alt="个人简介"/><span class="back-menu-item-text">个人简介</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://space.bilibili.com/32396508" title="B站主页"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/65b3af5d871b83018a16e135.png" alt="B站主页"/><span class="back-menu-item-text">B站主页</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://steamcommunity.com/profiles/76561198188551931/" title="Steam主页"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/65b3aed3871b83018a143eba.png" alt="Steam主页"/><span class="back-menu-item-text">Steam主页</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 分享</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/games/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-game"></use></svg><span> 游戏世界</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/CUDA/" style="font-size: 0.88rem;">CUDA<sup>1</sup></a><a href="/tags/Git/" style="font-size: 0.88rem;">Git<sup>1</sup></a><a href="/tags/GitHub/" style="font-size: 0.88rem;">GitHub<sup>2</sup></a><a href="/tags/Hackintosh/" style="font-size: 0.88rem;">Hackintosh<sup>1</sup></a><a href="/tags/Hexo/" style="font-size: 0.88rem;">Hexo<sup>5</sup></a><a href="/tags/Linux/" style="font-size: 0.88rem;">Linux<sup>2</sup></a><a href="/tags/Markdown/" style="font-size: 0.88rem;">Markdown<sup>1</sup></a><a href="/tags/NAS/" style="font-size: 0.88rem;">NAS<sup>7</sup></a><a href="/tags/NVIDIA/" style="font-size: 0.88rem;">NVIDIA<sup>1</sup></a><a href="/tags/Sideload/" style="font-size: 0.88rem;">Sideload<sup>1</sup></a><a href="/tags/iOS/" style="font-size: 0.88rem;">iOS<sup>2</sup></a><a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 0.88rem;">前端<sup>5</sup></a><a href="/tags/%E5%BC%80%E5%8F%91/" style="font-size: 0.88rem;">开发<sup>2</sup></a><a href="/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/" style="font-size: 0.88rem;">开发板<sup>1</sup></a><a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.88rem;">技术<sup>1</sup></a><a href="/tags/%E6%8A%98%E8%85%BE/" style="font-size: 0.88rem;">折腾<sup>8</sup></a><a href="/tags/%E6%8D%A1%E5%9E%83%E5%9C%BE/" style="font-size: 0.88rem;">捡垃圾<sup>5</sup></a><a href="/tags/%E6%B5%81%E5%AA%92%E4%BD%93/" style="font-size: 0.88rem;">流媒体<sup>1</sup></a><a href="/tags/%E7%A0%B4%E8%A7%A3/" style="font-size: 0.88rem;">破解<sup>4</sup></a><a href="/tags/%E7%A1%AC%E7%9B%98/" style="font-size: 0.88rem;">硬盘<sup>5</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 0.88rem;">网络<sup>1</sup></a><a href="/tags/%E8%BD%AF%E8%B7%AF%E7%94%B1/" style="font-size: 0.88rem;">软路由<sup>2</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="10090931353" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.3"></meting-js></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://music.163.com/#/playlist?id=10090931353&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.cbd.int/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("07/21/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2021 By 安知鱼 V1.6.14",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 Mitchell 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script async="async">(function () {
+  var grt = new Date("07/21/2021 00:00:00"); //设置网站上线时间
+  var now = new Date();
+  var dnum;
+  var hnum;
+  var mnum;
+  var snum;
+  var nowHour;
+
+  // 计算并更新天数、小时数、分钟数和秒数
+  function updateTime() {
+    now = new Date(); // 更新 now 的值
+    nowHour = now.getHours(); // 更新 nowHour 的值
+    var days = (now - grt) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+      hnum = "0" + hnum;
+    }
+    var minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+      mnum = "0" + mnum;
+    }
+    var seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+      snum = "0" + snum;
+    }
+  }
+
+  // 更新网页中显示的网站运行时间
+  function updateHtml() {
+    const footer = document.getElementById("footer");
+    if (!footer) return
+    let currentTimeHtml = "";
+    if (nowHour < 18 && nowHour >= 9) {
+      // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    } else {
+      // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
+      let img = document.querySelector("#workboard .workSituationImg");
+      if (img != null) {
+        img.src = "https://i.loli.wiki/public/240126/chilling.svg";
+        img.title = "下班了就该开开心心的玩耍，嘿嘿~";
+        img.alt = "下班了就该开开心心的玩耍，嘿嘿~";
+      }
+
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    }
+
+    if (document.getElementById("runtimeTextTip")) {
+      document.getElementById("runtimeTextTip").innerHTML = currentTimeHtml;
+    }
+  }
+
+  setInterval(() => {
+    updateTime();
+    updateHtml();
+  }, 1000);
+})();</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://996luoxuhe-anzhiyublogcomments.hf.space',
+      region: '',
+      onCommentLoaded: () => {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(runFn,0)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.39/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://996luoxuhe-anzhiyublogcomments.hf.space',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const runFn = () => {
+    init();
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://996luoxuhe-anzhiyublogcomments.hf.space',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.39/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom && ($dom.innerHTML= result)
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script async src="https://at.alicdn.com/t/c/font_4422647_dcmrc0z2wr.js?spm=a313x.manage_type_myprojects.i1.10.54df3a810aqLPk&amp;file=font_4422647_dcmrc0z2wr.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
