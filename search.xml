@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>魅族 Pro6 Plus 获取完整 Root 权限</title>
+      <link href="/Meizu-Pro6Plus-Root/"/>
+      <url>/Meizu-Pro6Plus-Root/</url>
+      
+        <content type="html"><![CDATA[<p>偶然发现吃灰多年的 Pro6 Plus 仍有很大的利用价值：“外星科技”耳机孔，HiFi 功能，3D Press，内置心率传感器的 mBack - mTouch……尤其是一块5.7英寸 2K 分辨率大屏，便想要将它作为我的游戏串流机使用。回顾一下 Pro6 Plus 的硬件规格：</p><ul><li><p>Samsung Exynos 8890 处理器</p><ul><li>Exynos M1 2.0GHz x4 + ARM® Cortex®-A53™ 1.5GHz x4</li><li>ARM Mali-T880 MP10 GPU</li></ul></li><li><p>5.7 英寸 2K Super AMOLED 屏幕</p><ul><li>对比度 10000:1</li><li>518 PPI</li><li>亮度 430cd&#x2F;m² (typical value)</li></ul></li><li><p>4GB LPDDR4 RAM</p></li><li><p>64GB UFS2.0 ROM</p></li><li><p>ESS ES9018K2M HiFi 解码芯片</p></li></ul><p>完整的硬件参数详见 <a href="https://www.meizu.com/en/products/pro6plus/spec.html">Meizu 官网</a></p><p>然而，这毕竟是一款已经多年的手机，魅族的系统优化再好也没什么好办法。而且因为是三星平台的原因，没有办法解开 Bootloader 来输入别的系统，那就只能获取完整 Root 权限，卸载掉无用的系统软件，好好 <del>折腾</del> 优化一下。</p><h2 id="Pro6-Plus-获取完整-Root"><a href="#Pro6-Plus-获取完整-Root" class="headerlink" title="Pro6 Plus 获取完整 Root"></a>Pro6 Plus 获取完整 Root</h2><h3 id="一、降级-Flyme-系统"><a href="#一、降级-Flyme-系统" class="headerlink" title="一、降级 Flyme 系统"></a>一、降级 Flyme 系统</h3><p>最新版本的 Flyme 8.0.5.0A 加入了太多的广告，而且 Android 版本仍是 7.0，于是我就想降回 Flyme7。降级方法如下：</p><ol><li><p>下载系统卡刷包：</p><a class="btn-anzhiyu larger" href="https://xdaforums.com/f/meizu-pro-6-plus-guides-news-discussion.6032/"   title="XDA论坛 - Meizu Pro 6 Plus"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>XDA论坛 - Meizu Pro 6 Plus</span></a><p>选择想要刷机的包，我选择的<a href="https://xdaforums.com/t/flyme-7-3-0-0a-stable-big-update-rom.3935210/">Flyme 7.3.0.0A [Stable] Big Update</a>，发布于 May 30 2019。这是 Flyme8 之前的最后一个版本。</p></li><li><p>将下载好的刷机包命名为 <code>update.zip</code>，放置在手机根目录</p></li><li><p>在文件管理中点击 <code>update.zip</code>，一定要选择“清除应用数据”！</p></li><li><p>等待自动刷机完成</p></li></ol><h3 id="二、获取不完整-Root（官方-Root）"><a href="#二、获取不完整-Root（官方-Root）" class="headerlink" title="二、获取不完整 Root（官方 Root）"></a>二、获取不完整 Root（官方 Root）</h3><p>在获取完整 Root 之前，首先需要获取魅族官方提供的 Root（不完整 Root），方法如下：</p><ol><li>登录魅族账号</li><li>设置 - 指纹、面部和安全 - ROOT 权限，开启 Root 权限</li><li>自动重启手机</li></ol><h3 id="三、获取完整-Root"><a href="#三、获取完整-Root" class="headerlink" title="三、获取完整 Root"></a>三、获取完整 Root</h3><blockquote><p>Flyme7&#x2F;8 获取完整 Root 脚本作者为：酷安 @枫亭吴小豪</p><p>完整 Root 脚本分享来源：<a href="https://xdaforums.com/t/pro6-plus-flyme-7-3-completely-root.3925374/"> XDA 论坛 - PRO6 PLUS Flyme 7.3 completely ROOT</a></p><p>分享来源提供的下载链接：<a href="https://pan.baidu.com/s/139napinPQQ77GDaossKe7w">百度网盘（提取码：l65a）</a></p><p>多开鸭维护的 Xposed 框架 - <a href="https://www.duokaiya.com/xposed.html">XPosed鸭</a></p></blockquote><ol><li><p>下载所需的文件：</p><a class="btn-anzhiyu larger" href="https://cloud.189.cn/t/IrINr2fAZnua/"   title="天翼云盘（访问码：va7z）"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>天翼云盘（访问码：va7z）</span></a><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">|-- es-file-explorer-4-2-0-3.apk#ES文件管理器老版本</span><br><span class="line">|-- Xposed.apk#由多开鸭维护的Xposed框架</span><br><span class="line">|-- Root脚本 v1.8.zip   #酷安@枫亭吴小豪开发的Flyme7/8获取完整Root脚本</span><br><span class="line">| |-- 更新日志.txt  </span><br><span class="line">| |-- MT管理器.apk   #MT管理器v2.6.0</span><br><span class="line">| |-- libsupol.so</span><br><span class="line">| |-- Root脚本.sh </span><br><span class="line">| |-- su</span><br><span class="line">| |-- SU.apk #SU超级权限v2.79</span><br><span class="line">| |-- supolicy</span><br></pre></td></tr></table></figure></li><li><p>解压 <code>Root脚本 v1.8.zip</code>，安装 <code>MT管理器</code>，给予 ROOT权限</p></li><li><p>使用 <code>MT管理器</code> 运行 <code>Root脚本.sh</code>，允许 ROOT权限。第一次若是卡在启动服务，可以退出软件重新运行即可</p></li><li><p>脚本运行成功会自动重启</p></li><li><p>重启后即出现SU超级权限管理器，获取完整 Root 成功</p></li></ol><h3 id="四、进一步折腾"><a href="#四、进一步折腾" class="headerlink" title="四、进一步折腾"></a>四、进一步折腾</h3><ol><li>安装ES文件管理器，点击左侧边栏 - 开启Root工具箱，即可卸载系统应用</li><li>安装 Xposed 框架（注意，Magisk 和 LSPosed 需要 Android8.0 以上版本；Pro6 Plus 的Android7.0 只能用 Xposed 框架</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Android </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 折腾 </tag>
+            
+            <tag> Android </tag>
+            
+            <tag> Root </tag>
+            
+            <tag> Xposed </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>对 MacBook 的调整和优化</title>
       <link href="/MacBook-Adjustment-&amp;-Optimization/"/>
       <url>/MacBook-Adjustment-&amp;-Optimization/</url>
@@ -196,9 +227,9 @@
             
             <tag> iOS </tag>
             
-            <tag> TrollStore </tag>
-            
             <tag> Sideload </tag>
+            
+            <tag> TrollStore </tag>
             
         </tags>
       
@@ -584,7 +615,7 @@
       <link href="/Fix-BF4-PB-Problem/"/>
       <url>/Fix-BF4-PB-Problem/</url>
       
-        <content type="html"><![CDATA[<p>VR无线串流软件<a href="https://www.vrdesktop.net/">Virtual Desktop</a>与PunkBuster冲突，需要卸载后者才可使用前者！</p><blockquote><p>本文在 2025 年战地风云4解禁后才公开访问。本人带着批判美帝国主义的眼光尝试该游戏；本人始终坚持文化自信，相信人民军队！</p></blockquote><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在你从某宝花2元白嫖了Amazon的战地4的Key之后，打开过这个游戏吗？<br>不会只玩了剧情，没有体验战地风云最最好玩的多人游戏吧？</p><p>多人游戏，启动！<br>选择服务器，极地监狱，进入！<br>复活，突突突（几秒后）…您已被PunkBuster驱逐！<br><img src="https://i.loli.net/2021/10/06/JhktT7sXfrDi9yx.jpg" alt="您已被PunkBuster驱逐"><br>我又没开挂，凭什么踢我？</p><p><u>因为你没有（正确）安装反作弊器。</u></p><hr><h2 id="反作弊器安装方法"><a href="#反作弊器安装方法" class="headerlink" title="反作弊器安装方法"></a>反作弊器安装方法</h2><ol><li><p><del>将Origin中战地4的启动方式改成x86，以后再启动游戏会像战地3一样使用浏览器选择服务器：Origin - 游戏库 - Battlefield4 - 设定 - 游戏属性 - 进阶启动选项 - 启动此游戏时… - Battlefield 4™ (x86)</del></p></li><li><p>下载最新版PB：访问PunkBuster官网，下载<a href="https://www.evenbalance.com/pbsetup.php">pbsetup.zip</a>，点击网页右上角的“Downloads”，下载PunkBuster Service Installer (pbsvc)</p></li><li><p>卸载旧版PB：打开pbsvc.exe，选择Un-Install&#x2F;Remove PunkBuster Service，点击Next，…, 全部显示 OK，点击 Finish</p></li><li><p>重启电脑</p></li><li><p>安装PB：解压pbsetup.zip，启动pbsetup.exe，选择I agree，选择Add a Game，选择Battlefield 4，Game Path中如果没有自动找到你的游戏目录，你需要手动选择一下，然后等待安装完成。安装完成后点击Update PunkBuster<br>注意：在这一步中，需要关闭所有杀毒软件（包括 Windows Defender）和所有网络加速器，因为它们可能会导致pbsetup从服务器下载的文件损坏！<a href="https://www.reddit.com/r/battlefield_4/comments/1i47bim/i_wanted_to_update_punkbuster_and_this_dll/">参考来源</a></p></li><li><p>安装PnkBstrA和PnkBstrB：打开pbsvc.exe，选择Install&#x2F;Re-Install PunkBuster Service，点击Next直到安装完成</p></li><li><p>确保控制面板 - Windows Defender 防火墙 - 允许应用或功能通过 Windows Defender 防火墙中，Battlefield 4 x86、Battlefield 4 x64、PnkBstrA、PnkBstrB 是允许的状态。</p></li></ol><hr><h2 id="再BB两句"><a href="#再BB两句" class="headerlink" title="再BB两句"></a>再BB两句</h2><p>如果你要玩欧服，加速器一定要选择带假延迟的，否则可能会因为ping过高被踢<br>记得一定要遵守服务器的规定！有的服务器有禁用的装备，强制使用可能会被踢</p><blockquote><p>AEK-971太强了，几乎所有人都在用……</p></blockquote><blockquote><p>怀念 Origin，EA App 好难用……</p></blockquote><blockquote><p>2025.08.18 更新：战地6的Beta测试结束了，意犹未尽。EA App 总算好用了些……</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<p>VR无线串流软件<a href="https://www.vrdesktop.net/">Virtual Desktop</a>与PunkBuster冲突，需要卸载后者才可使用前者！</p><blockquote><p>本文在 2025 年战地风云4解禁后才公开访问。本人带着批判美帝国主义的眼光尝试该游戏；本人始终坚持文化自信，相信人民军队！</p></blockquote><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在你从某宝花2元白嫖了Amazon的战地4的Key之后，打开过这个游戏吗？<br>不会只玩了剧情，没有体验战地风云最最好玩的多人游戏吧？</p><p>多人游戏，启动！<br>选择服务器，极地监狱，进入！<br>复活，突突突（几秒后）…您已被PunkBuster驱逐！<br><img src="https://pic1.imgdb.cn/item/68a43c7658cb8da5c8387286.jpg" alt="您已被PunkBuster驱逐"><br>我又没开挂，凭什么踢我？</p><p><u>因为你没有（正确）安装反作弊器。</u></p><hr><h2 id="反作弊器安装方法"><a href="#反作弊器安装方法" class="headerlink" title="反作弊器安装方法"></a>反作弊器安装方法</h2><ol><li><p><del>将Origin中战地4的启动方式改成x86，以后再启动游戏会像战地3一样使用浏览器选择服务器：Origin - 游戏库 - Battlefield4 - 设定 - 游戏属性 - 进阶启动选项 - 启动此游戏时… - Battlefield 4™ (x86)</del></p></li><li><p>下载最新版PB：访问PunkBuster官网，下载<a href="https://www.evenbalance.com/pbsetup.php">pbsetup.zip</a>，点击网页右上角的“Downloads”，下载PunkBuster Service Installer (pbsvc)</p></li><li><p>卸载旧版PB：打开pbsvc.exe，选择Un-Install&#x2F;Remove PunkBuster Service，点击Next，…, 全部显示 OK，点击 Finish</p></li><li><p>重启电脑</p></li><li><p>安装PB：解压pbsetup.zip，启动pbsetup.exe，选择I agree，选择Add a Game，选择Battlefield 4，Game Path中如果没有自动找到你的游戏目录，你需要手动选择一下，然后等待安装完成。安装完成后点击Update PunkBuster<br>注意：在这一步中，需要关闭所有杀毒软件（包括 Windows Defender）和所有网络加速器，因为它们可能会导致pbsetup从服务器下载的文件损坏！<a href="https://www.reddit.com/r/battlefield_4/comments/1i47bim/i_wanted_to_update_punkbuster_and_this_dll/">参考来源</a></p></li><li><p>安装PnkBstrA和PnkBstrB：打开pbsvc.exe，选择Install&#x2F;Re-Install PunkBuster Service，点击Next直到安装完成</p></li><li><p>确保控制面板 - Windows Defender 防火墙 - 允许应用或功能通过 Windows Defender 防火墙中，Battlefield 4 x86、Battlefield 4 x64、PnkBstrA、PnkBstrB 是允许的状态。</p></li></ol><hr><h2 id="再BB两句"><a href="#再BB两句" class="headerlink" title="再BB两句"></a>再BB两句</h2><p>如果你要玩欧服，加速器一定要选择带假延迟的，否则可能会因为ping过高被踢<br>记得一定要遵守服务器的规定！有的服务器有禁用的装备，强制使用可能会被踢</p><blockquote><p>AEK-971太强了，几乎所有人都在用……</p></blockquote><blockquote><p>怀念 Origin，EA App 好难用……</p></blockquote><blockquote><p>2025.08.18 更新：战地6的Beta测试结束了，意犹未尽。EA App 总算好用了些……</p></blockquote>]]></content>
       
       
       <categories>
