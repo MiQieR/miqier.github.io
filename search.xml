@@ -8,7 +8,7 @@
       <link href="/Witcher3-Saves-Switch-to-PC/"/>
       <url>/Witcher3-Saves-Switch-to-PC/</url>
       
-        <content type="html"><![CDATA[<h2 id="一、Switch-版巫师3存档转移至-PC"><a href="#一、Switch-版巫师3存档转移至-PC" class="headerlink" title="一、Switch 版巫师3存档转移至 PC"></a>一、Switch 版巫师3存档转移至 PC</h2><ol><li><p>下载所需的软件：<code>offzip</code> 和 <code>WinHex</code></p><a class="btn-anzhiyu larger" href="https://aluigi.altervista.org/mytoolz.htm"   title="下载offzip"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>下载offzip</span></a><a class="btn-anzhiyu larger" href="https://www.423down.com/995.html"   title="下载WinHex"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>下载WinHex</span></a></li><li><p>启动 Switch 版巫师3，手动保存一个存档。因为autosave自动存档与checkpoint检查点存档不能转移，仅manualsave手动存档可用。</p></li><li><p>拷贝 Switch 版巫师3存档到 PC</p><p>使用 <code>DBI</code> 的 MTP 模式连接 PC，将盘符 <code>7: Saves</code>&#x2F;The Witcher 3 Wild Hunt&#x2F;Username&#x2F; 文件夹下的手动存档文件拷贝至 PC，参考文件如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|-- Manual.114d9f.7e941000.42bec00.sav     #需要拷贝</span><br><span class="line">|-- Manual.114d9f.7e941000.42bec00.png     #需要拷贝，可用于定位目标存档</span><br><span class="line">|-- Manual.114d9f.7e941000.42bec00.req     #无需拷贝</span><br></pre></td></tr></table></figure></li><li><p>在终端运行以下命令：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">offzip.exe -a &lt;input&gt; &lt;output&gt; 0</span><br></pre></td></tr></table></figure><p>如果运行成功，会在指定的输出文件夹产生一个 <code>0000000c.snf</code> 文件。</p></li><li><p>打开 WinHex，文件 - 打开，选择刚刚的 <code>0000000c.snf</code> 文件</p></li><li><p>导航 - 转到偏移量，输入 <code>c16</code>，确认</p></li><li><p>将偏移量所在位置的 <code>1B</code> 改为 <code>12</code>，文件 - 保存</p></li><li><p>将修改后的 <code>0000000c.snf</code> 改名为 <code>Manual.114d9f.7e941000.42bec00.sav</code></p></li><li><p>将存档文件名改为 PC 存档的形式，例如： <code>Manual.114d9f.7e941000.42bec00.sav</code> 改为 <code>ManualSave_100056_7e65bc00_4ec29e9.sav</code>；<code>Manual.114d9f.7e941000.42bec00.png</code> 改为 <code>ManualSave_100056_7e65bc00_4ec29e9.png</code></p></li><li><p>将改名后的文件移动至游戏存档目录 <code>C:\Users\UserName\Documents\The Witcher 3\gamesaves\</code></p></li><li><p>启动 Steam，读取刚刚的手动存档，玩一下再保存存档，退出游戏，等待 Steam 云存档同步完成。</p></li></ol><br/><hr><h2 id="二、PC-版巫师3存档转移至-Switch"><a href="#二、PC-版巫师3存档转移至-Switch" class="headerlink" title="二、PC 版巫师3存档转移至 Switch"></a>二、PC 版巫师3存档转移至 Switch</h2><p>直接将 PC 存档拖入 Switch 存档目录即可。</p><br/><hr><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>Bilibili@天竺山那年夏天：<a href="https://www.bilibili.com/video/BV1fe4y1s7Ld/">switch巫师三不用云存档将存档转移到pc巫师三使用</a></p><p>GBATEMP@that_boy： <a href="https://gbatemp.net/threads/the-witcher-3-wild-hunt-general-hacking-v2-0.555695/page-7#post-9402083/">a way to transfer saves from Switch to PC without cloud saves!</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="一、Switch-版巫师3存档转移至-PC"><a href="#一、Switch-版巫师3存档转移至-PC" class="headerlink" title="一、Switch 版巫师3存档转移至 PC"></a>一、Switch 版巫师3存档转移至 PC</h2><ol><li><p>下载所需的软件：<code>offzip</code> 和 <code>WinHex</code></p><blockquote><p>下载offzip时建议使用浏览器的查找功能（Ctrl+F）快速定位位置</p></blockquote><a class="btn-anzhiyu larger" href="https://aluigi.altervista.org/mytoolz.htm"   title="下载offzip"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>下载offzip</span></a><a class="btn-anzhiyu larger" href="https://www.423down.com/995.html"   title="下载WinHex"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>下载WinHex</span></a></li><li><p>启动 Switch 版巫师3，手动保存一个存档。因为autosave自动存档与checkpoint检查点存档不能转移，仅manualsave手动存档可用。</p></li><li><p>拷贝 Switch 版巫师3存档到 PC</p><p>使用 <code>DBI</code> 的 MTP 模式连接 PC，将盘符 <code>7: Saves</code>&#x2F;The Witcher 3 Wild Hunt&#x2F;Username&#x2F; 文件夹下的手动存档文件拷贝至 PC，参考文件如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|-- Manual.114d9f.7e941000.42bec00.sav     #需要拷贝</span><br><span class="line">|-- Manual.114d9f.7e941000.42bec00.png     #需要拷贝，可用于定位目标存档</span><br><span class="line">|-- Manual.114d9f.7e941000.42bec00.req     #无需拷贝</span><br></pre></td></tr></table></figure></li><li><p>在终端运行以下命令：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">offzip.exe -a &lt;input&gt; &lt;output&gt; 0</span><br></pre></td></tr></table></figure><p>如果运行成功，会在指定的输出文件夹产生一个 <code>0000000c.snf</code> 文件。</p></li><li><p>打开 WinHex，文件 - 打开，选择刚刚的 <code>0000000c.snf</code> 文件</p></li><li><p>导航 - 转到偏移量，输入 <code>c16</code>，确认</p><blockquote><p>若winhex软件的偏移量变成十进制，需要定位3094位置</p></blockquote></li><li><p>将偏移量所在位置的 <code>1B</code> 改为 <code>12</code>，文件 - 保存</p></li><li><p>将修改后的 <code>0000000c.snf</code> 改名为 <code>Manual.114d9f.7e941000.42bec00.sav</code></p></li><li><p>将存档文件名改为 PC 存档的形式，例如： <code>Manual.114d9f.7e941000.42bec00.sav</code> 改为 <code>ManualSave_100056_7e65bc00_4ec29e9.sav</code>；<code>Manual.114d9f.7e941000.42bec00.png</code> 改为 <code>ManualSave_100056_7e65bc00_4ec29e9.png</code></p></li><li><p>将改名后的文件移动至游戏存档目录 <code>C:\Users\UserName\Documents\The Witcher 3\gamesaves\</code></p></li><li><p>启动 Steam，读取刚刚的手动存档，玩一下再保存存档，退出游戏，等待 Steam 云存档同步完成。</p></li></ol><br/><hr><h2 id="二、PC-版巫师3存档转移至-Switch"><a href="#二、PC-版巫师3存档转移至-Switch" class="headerlink" title="二、PC 版巫师3存档转移至 Switch"></a>二、PC 版巫师3存档转移至 Switch</h2><p>直接将 PC 存档拖入 Switch 存档目录即可。</p><br/><hr><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>Bilibili@天竺山那年夏天：<a href="https://www.bilibili.com/video/BV1fe4y1s7Ld/">switch巫师三不用云存档将存档转移到pc巫师三使用</a></p><p>GBATEMP@that_boy： <a href="https://gbatemp.net/threads/the-witcher-3-wild-hunt-general-hacking-v2-0.555695/page-7#post-9402083/">a way to transfer saves from Switch to PC without cloud saves!</a></p>]]></content>
       
       
       <categories>
@@ -22,9 +22,9 @@
             
             <tag> 折腾 </tag>
             
-            <tag> 破解 </tag>
-            
             <tag> 游戏 </tag>
+            
+            <tag> 破解 </tag>
             
             <tag> Switch </tag>
             
@@ -116,6 +116,33 @@
             <tag> CUDA </tag>
             
             <tag> NVIDIA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LLM 推理和微调所需 VRAM 估算指南</title>
+      <link href="/LLM-VRAM-Required/"/>
+      <url>/LLM-VRAM-Required/</url>
+      
+        <content type="html"><![CDATA[<h2 id="基础术语解释"><a href="#基础术语解释" class="headerlink" title="基础术语解释"></a>基础术语解释</h2><ul><li><p><strong>推理（Inference）</strong>：使用预训练模型根据输入数据进行文本的过程。</p></li><li><p><strong>微调（Fine-tuning）</strong>：在特定数据集上进一步训练预训练模型以使其适应特定任务的过程。</p></li><li><p><strong>内存消耗</strong>：在 LLM 推理和微调期间存储和处理数据所需的计算机内存量。</p></li><li><p><strong>优化器</strong>：一些优化算法（如带有动量的优化器）需要保存一些状态信息，以便在每次更新时进行调整。这些状态信息也会占用一定的显存。</p></li><li><p><strong>批处理大小（BatchSize）</strong> ：批处理大小是指一次推理中处理的样本数量。较大的批处理大小可能会增加显存使用，因为需要同时存储多个样本的计算结果。</p></li></ul><hr><br/><h2 id="LLM参数量与推理和微调所需-VRAM-基本关系"><a href="#LLM参数量与推理和微调所需-VRAM-基本关系" class="headerlink" title="LLM参数量与推理和微调所需 VRAM 基本关系"></a>LLM参数量与推理和微调所需 VRAM 基本关系</h2><p><strong>推理：模型显存+推理显存</strong><br><strong>微调：模型显存+推理显存+优化器显存</strong></p><p>想要进行相应操作，首先模型需要运行起来-即本身的运行显存；其次就是具体操作需要的显存。对于推理，只需要加一个推理显存；对于微调，则需要给优化器提供显存和微调显存。</p><hr><br/><h2 id="通过高级工具计算模型所需-VRAM"><a href="#通过高级工具计算模型所需-VRAM" class="headerlink" title="通过高级工具计算模型所需 VRAM"></a>通过高级工具计算模型所需 VRAM</h2><p>下面我们介绍一些高级计算的工具。</p><h3 id="1-VRAM-Estimator"><a href="#1-VRAM-Estimator" class="headerlink" title="1. VRAM Estimator"></a>1. VRAM Estimator</h3><a class="btn-anzhiyu larger" href="https://vram.asmirnov.xyz/"   title="VRAM Estimator"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>VRAM Estimator</span></a><blockquote><p><a href="https://github.com/furiousteabag/vram-calculator">https://github.com/furiousteabag/vram-calculator</a></p></blockquote><p>这个 GitHub 开源的工具可以估计基于transformer的模型用于推理和训练的GPU VRAM使用情况。它可以允许输入各种参数，如模型名称，精度，最大序列长度，批量大小，gpu数量。提供参数、激活、输出和CUDA内核的VRAM使用情况的详细细分。</p><p><img src="https://pic1.imgdb.cn/item/68d2b791c5157e1a882bd52c.png" alt="VRAM Estimator"></p><h3 id="2-Hugging-Face-Accelerate-Model-Memory-Calculator"><a href="#2-Hugging-Face-Accelerate-Model-Memory-Calculator" class="headerlink" title="2. Hugging Face Accelerate Model Memory Calculator"></a>2. Hugging Face Accelerate Model Memory Calculator</h3><a class="btn-anzhiyu larger" href="https://huggingface.co/spaces/hf-accelerate/model-memory-usage"   title="Model Memory Calculator"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>Model Memory Calculator</span></a><blockquote><p><a href="https://github.com/huggingface/accelerate">https://github.com/huggingface/accelerate</a></p></blockquote><p>这个 Hugging Face 官方开源的工具可以计算用于推理和训练的模型的内存使用量。因为是Hugging Face的链接，所以可以输入模型名称或URL，该工具将提供内存使用情况的全面细分，包括数据类型、最大层、总大小和使用不同优化器的训练内存使用情况。</p><p><img src="https://pic1.imgdb.cn/item/68d2b9a0c5157e1a882bd64d.png" alt="Hugging Face Accelerate Model Memory Calculator"></p><h3 id="3-Can-you-run-it-LLM-version"><a href="#3-Can-you-run-it-LLM-version" class="headerlink" title="3. Can you run it? LLM version"></a>3. Can you run it? LLM version</h3><a class="btn-anzhiyu larger" href="https://huggingface.co/spaces/Vokturz/can-it-run-llm"   title="Can you run it? LLM version"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>Can you run it? LLM version</span></a><p>这个 Hugging Face 开源的工具允许用户测试自己设备是否有能力使用 LLM 推理或 LoRA 微调。可通过调整 LoRa 可训练参数查看不同量化下所需的 VRAM。</p><p><img src="https://pic1.imgdb.cn/item/68d2bb17c5157e1a882bd6de.png"></p><h3 id="4-LLM-Inference-VRAM-Performance-Calculator"><a href="#4-LLM-Inference-VRAM-Performance-Calculator" class="headerlink" title="4. LLM Inference: VRAM &amp; Performance Calculator"></a>4. LLM Inference: VRAM &amp; Performance Calculator</h3><a class="btn-anzhiyu larger" href="https://apxml.com/tools/vram-calculator"   title="LLM Inference: VRAM & Performance Calculator"><i class="anzhiyufont anzhiyu-icon-circle-arrow-right"></i><span>LLM Inference: VRAM & Performance Calculator</span></a><p>这个 ApX 的工具允许用户测试自己设备是否有能力使用 LLM 推理或 LoRA 微调。支持最新的计算卡，如 A100、H100、H800、B100、B200等，以及 Apple Silicon 如 M4 Max；支持调整 GPU 数量；支持设置并发用户数；提供内存分配参考和生成速度参考；提供中文翻译。</p><p><img src="https://pic1.imgdb.cn/item/68d2bd2ec5157e1a882bd7d3.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> AIGC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> AI </tag>
+            
+            <tag> LLM </tag>
             
         </tags>
       
