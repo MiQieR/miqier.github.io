@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>Nintendo-Switch-Android</title>
+      <link href="/Nintendo-Switch-Android/"/>
+      <url>/Nintendo-Switch-Android/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、为什么要给-Switch-刷-Android？"><a href="#一、为什么要给-Switch-刷-Android？" class="headerlink" title="一、为什么要给 Switch 刷 Android？"></a>一、为什么要给 Switch 刷 Android？</h2><p>非常简单的原因，在 Android 系统下可以做更多事，使用 Switch 同款 SoC —— Tegra X1 的 NVIDIA SHIELD TV 也运行的 Android。</p><p>最为突出的一点原因是，Android 系统下可以利用起来 Tegra X1 的顶级视频解码器，从而实现 1~2ms 的 H.265 解码延迟，这是如今哪怕 Snapdragon 8 Elite 也无法达到的顶级解码延迟。配合那自带的手柄，对于有 Switch 的用户来说，这就是性价比最高的串流设备。</p><p>此外，Switch 如今也可以刷 Android TV 系统，如果不是 4K 电视，那就又能省下一个电视盒子的钱。</p><br/><hr><h2 id="二、Switch-刷-Android"><a href="#二、Switch-刷-Android" class="headerlink" title="二、Switch 刷 Android"></a>二、Switch 刷 Android</h2><p>目前，Switch 可供刷机的 Android 系统有多种选择：</p><p>- </p><p>这里以</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Games </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 折腾 </tag>
+            
+            <tag> 游戏 </tag>
+            
+            <tag> Android </tag>
+            
+            <tag> Switch </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>无需云存档，巫师3存档 Switch 版与 PC 版互转</title>
       <link href="/Witcher3-Saves-Switch-to-PC/"/>
       <url>/Witcher3-Saves-Switch-to-PC/</url>
